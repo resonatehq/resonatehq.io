@@ -38,8 +38,26 @@ export default function Features() {
               <div className="flex flex-col text-center w-full px-4 lg:space-x-10 items-center">
                 <div className="lg:pt-24 md:pt-24 pb-12 text-slate-700">
                   <h2 className="text-2xl sm:text-4xl pb-2">
-                    Next Webinar TBD
+                    February 6th 2025
                   </h2>
+
+                  <p className="text-xl sm:text-2xl mt-3 font-light">
+                    Software engineering with Dominik and Joran.
+                  </p>
+
+                  <p className="text-xl sm:text-2xl mt-6 font-light">
+                    09:00 AM - 10:00 AM <span className="font-bold">PT</span>
+                  </p>
+
+                  <div className="container mx-auto py-8 text-center">
+                    <iframe
+                      src="https://docs.google.com/forms/d/e/1FAIpQLSewN2aRdGr8SOlOcpx6OIC5XcpgeOEIrr7Wy8q4OsPjWf7ykg/viewform?embedded=true"
+                      width="640"
+                      height="859"
+                    >
+                      Loading…
+                    </iframe>
+                  </div>
                 </div>
               </div>
             </div>
