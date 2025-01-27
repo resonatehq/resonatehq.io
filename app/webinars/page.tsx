@@ -42,7 +42,7 @@ export default function Features() {
                   </h2>
 
                   <p className="text-xl sm:text-2xl mt-3 font-light">
-                    Software engineering with Dominik and Joran.
+                    DST & Distributed Systems w/ Dominik and Joran.
                   </p>
 
                   <p className="text-xl sm:text-2xl mt-6 font-light">
