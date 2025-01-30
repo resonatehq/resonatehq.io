@@ -4,10 +4,10 @@ import MailchimpForm from "@/components/MailchimpForm";
 import Image from "next/image";
 
 const benefits = [
-  "Product release annoucements",
-  "Notification of blog posts",
-  "Webinar sign up offers",
-  "Access to new tutorials",
+  "Annoucements",
+  "Blog posts",
+  "Webinar notifications",
+  "Tutorials",
   "And more!",
 ];
 
@@ -52,7 +52,13 @@ export default function Features() {
           </section>
         </div>
       </div>
-      <MailchimpForm />
+      <iframe
+        className="border-1 border-gray-300 bg-white mx-auto"
+        src="https://resonatehqio.substack.com/embed"
+        width="480"
+        height="320"
+      ></iframe>
+
       <div className="lg:pt-48 md:pt-24 pb-12"></div>
       <Footer />
     </div>
