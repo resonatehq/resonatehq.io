@@ -66,7 +66,7 @@ const NavBar: React.FC = () => {
             Docs
           </a>
           <a
-            href="https://blog.resonatehq.io"
+            href="https://resonatehqio.substack.com/s/blog"
             className="block py-2 lg:py-0 text-lg font-light text-slate-700 hover:text-slate-500 cursor-pointer"
           >
             Blog

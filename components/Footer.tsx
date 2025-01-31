@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
         </div>
         <div className="mx-auto">
           <a
-            href="https://blog.resonatehq.io"
+            href="https://resonatehqio.substack.com/s/blog"
             className="text-slate-700 border-b border-transparent hover:border-slate-700 cursor-pointer hover:text-slate-500"
           >
             Blog
