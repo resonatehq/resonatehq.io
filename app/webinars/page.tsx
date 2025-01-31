@@ -51,9 +51,10 @@ export default function Features() {
 
                   <div className="container mx-auto py-8 text-center">
                     <iframe
+                      className="mx-auto"
                       src="https://docs.google.com/forms/d/e/1FAIpQLSewN2aRdGr8SOlOcpx6OIC5XcpgeOEIrr7Wy8q4OsPjWf7ykg/viewform?embedded=true"
-                      width="640"
-                      height="859"
+                      width="100%"
+                      height="900px"
                     >
                       Loading…
                     </iframe>
