@@ -26,7 +26,6 @@ export default function Features() {
                 <h1 className="text-4xl pb-16 font-light tracking-tight sm:text-8xl">
                   Subscribe
                 </h1>
-
                 <p className="mt-2 font-light text-xl sm:text-2xl">
                   What do you get when you subscribe to Resonate HQ ?
                 </p>
@@ -37,6 +36,13 @@ export default function Features() {
                   height="512"
                   width="512"
                 />
+                <iframe
+                  className="border-1 border-gray-300 bg-white mx-auto"
+                  src="https://resonatehqio.substack.com/embed"
+                  width="480"
+                  height="320"
+                ></iframe>
+
                 <div className="text-left mt-12 px-12 text-center">
                   {benefits.map((benefit, index) => (
                     <p
@@ -52,12 +58,6 @@ export default function Features() {
           </section>
         </div>
       </div>
-      <iframe
-        className="border-1 border-gray-300 bg-white mx-auto"
-        src="https://resonatehqio.substack.com/embed"
-        width="480"
-        height="320"
-      ></iframe>
 
       <div className="lg:pt-48 md:pt-24 pb-12"></div>
       <Footer />
