@@ -1,5 +1,5 @@
 import VideoEmbed from "@/components/VideoEmbed";
-import NavBar from "@/components/NavBar";
+import NavBar from "@/components/ResonateHQ";
 import Footer from "@/components/Footer";
 import ComparisonGrid from "@/components/ComparisonGrid";
 import Image from "next/image";

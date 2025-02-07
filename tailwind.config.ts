@@ -60,6 +60,8 @@ const config: Config = {
           "800": "#1c1e21",
           "900": "#1b1b1d",
         },
+        customSlate: "#353F58",
+        customBlue: "#88A7F6",
       },
     },
   },

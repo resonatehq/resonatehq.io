@@ -1,4 +1,4 @@
-import NavBar from "@/components/NavBar";
+import NavBar from "@/components/ResonateHQ";
 import Footer from "@/components/Footer";
 import TypeScriptCodeExample from "@/components/TypeScriptCodeExample";
 import TypeScriptGrid from "@/components/TypeScriptGrid";

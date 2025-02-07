@@ -1,4 +1,4 @@
-import NavBar from "@/components/NavBar";
+import NavBar from "@/components/ResonateHQ";
 import Footer from "@/components/Footer";
 import MailchimpForm from "@/components/MailchimpForm";
 import Image from "next/image";
