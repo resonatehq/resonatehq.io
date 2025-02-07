@@ -66,13 +66,13 @@ const NavBar: React.FC = () => {
             Docs
           </a>
           <a
-            href="https://resonatehqio.substack.com/s/blog"
+            href="https://journal.resonatehq.io/s/blog"
             className="block py-2 lg:py-0 text-lg font-light text-slate-700 hover:text-slate-500 cursor-pointer"
           >
             Blog
           </a>
           <a
-            href="/webinars"
+            href="https://journal.resonatehq.io/s/webinars"
             className="block py-2 lg:py-0 text-lg font-light text-slate-700 hover:text-slate-500 cursor-pointer"
           >
             Webinars
@@ -102,7 +102,7 @@ const NavBar: React.FC = () => {
             GitHub
           </a>
           <a
-            href="/subscribe"
+            href="https://journal.resonatehq.io/subscribe"
             className="block py-2 lg:py-0 text-lg font-light text-slate-700 hover:text-slate-500 cursor-pointer"
           >
             Subscribe

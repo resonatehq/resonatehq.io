@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/webinars",
+      "destination": "https://journal.resonatehq.io/s/webinars",
+      "permanent": true
+    },
+    {
+      "source": "/subscribe",
+      "destination": "https://journal.resonatehq.io/subscribe",
+      "permanent": true
+    }
+  ]
+}
