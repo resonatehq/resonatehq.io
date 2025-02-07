@@ -79,7 +79,7 @@ const Footer: React.FC = () => {
         </div>
         <div className="mx-auto">
           <a
-            href="/subscribe"
+            href="https://journal.resonatehq.io/subscribe"
             className="text-slate-700 border-b border-transparent hover:border-slate-700 cursor-pointer hover:text-slate-500"
           >
             Subscribe
