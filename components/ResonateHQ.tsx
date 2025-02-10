@@ -1,133 +1,136 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import { Open_Sans } from "next/font/google";
 
-interface NavItem {
-  type: "link" | "text" | "ascii" | "social-profile";
+const openSans = Open_Sans({
+  weight: ["300", "600", "700"],
+  subsets: ["latin"],
+  display: "swap",
+});
+
+interface DisplayItem {
+  type: "link" | "text" | "ascii" | "social-profile" | "button" | "image";
   content: string;
   href?: string;
   iconClass?: string;
   textColor?: string;
+  fontType: string;
+  fontSize: string;
 }
 
 const ResonateHQ: React.FC = () => {
   const [loadedItems, setLoadedItems] = useState<number>(0);
 
-  const navItems: NavItem[] = [
+  const displayItems: DisplayItem[] = [
     {
       type: "text",
       content: "initializing resonatehq.io...",
-      textColor: "text-green-400",
-    },
-    { type: "ascii", content: "                                             " },
-    { type: "ascii", content: "                @@@@@@@@@@@@@                " },
-    { type: "ascii", content: "            @@@@@@@@@@@@@@@@@@@@@            " },
-    { type: "ascii", content: "         @@@@@@               @@@@@@         " },
-    { type: "ascii", content: "       @@@@@                      @@@@       " },
-    { type: "ascii", content: "     @@@@                           @@@@     " },
-    { type: "ascii", content: "    @@@@                             @@@@    " },
-    { type: "ascii", content: "   @@@@                               @@@@   " },
-    { type: "ascii", content: "  @@@     @@@@@              .@@@@@@    @@@  " },
-    { type: "ascii", content: "  @@@   @@@@@@@@@           @@@@@@@@@  @@@@  " },
-    { type: "ascii", content: "  @@@   @@@@@@@@@           @@@@@@@@@   @@@  " },
-    { type: "ascii", content: "  @@@   @@@@@@@@@           @@@@@@@@@   @@@  " },
-    { type: "ascii", content: "  @@@   @@@@@@@@@           @@@@@@@@@   @@@  " },
-    { type: "ascii", content: "   @@@    @@@@@      @ @      @@@@@    @@@   " },
-    { type: "ascii", content: "   @@@@                               @@@@   " },
-    { type: "ascii", content: "    @@@@                             @@@@    " },
-    { type: "ascii", content: "     @@@@                           @@@@     " },
-    { type: "ascii", content: "       @@@@                       @@@@       " },
-    { type: "ascii", content: "         @@@@@@               @@@@@@         " },
-    { type: "ascii", content: "            @@@@@@@@@@@@@@@@@@@@@            " },
-    { type: "ascii", content: "                @@@@@@@@@@@@@                " },
-    { type: "ascii", content: "                                             " },
-    {
-      type: "text",
-      content: "mission:",
-      textColor: "text-green-400",
+      textColor: "text-tertiary",
+      fontType: "font-mono",
+      fontSize: "text-md",
     },
     {
       type: "text",
-      content: "build oss software for distributed system developers",
-      textColor: "text-gray-200",
+      content: "resonatehq.io proudly presents:",
+      textColor: "text-accent",
+      fontType: "font-mono",
+      fontSize: "text-md",
     },
     {
       type: "text",
-      content: "motto:",
-      textColor: "text-green-400",
-    },
-    { type: "text", content: "dead simple", textColor: "text-gray-200" },
-    { type: "text", content: "directory:", textColor: "text-green-400" },
-    {
-      type: "link",
-      content: "published articles",
-      href: "https://journal.resonatehq.io",
+      content: "Distributed Async Await",
+      textColor: "text-tertiary",
+      fontType: openSans.className,
+      fontSize: "text-4xl",
     },
     {
-      type: "link",
-      content: "software documentation",
-      href: "https://docs.resonatehq.io",
-    },
-    { type: "link", content: "webinar rsvp form", href: "/webinars" },
-    {
-      type: "link",
-      content: "discord server",
-      href: "https://resonatehq.io/discord",
-    },
-    { type: "link", content: "chat with echo", href: "/echo" },
-    { type: "text", content: "social links:", textColor: "text-green-400" },
-    {
-      type: "social-profile",
-      content: "github",
-      href: "https://github.com/resonatehq",
-      iconClass: "bx bx-sm bxl-github",
+      type: "text",
+      content: "A holistic programming model for the cloud.",
+      textColor: "text-tertiary",
+      fontType: openSans.className,
+      fontSize: "text-lg",
     },
     {
-      type: "social-profile",
-      content: "linkedin",
-      href: "https://www.linkedin.com/company/resonatehq",
-      iconClass: "bx bx-sm bxl-linkedin",
+      type: "text",
+      content:
+        "Build with the language you love. ♥️ Adopt platform-level recovery and coordination.",
+      textColor: "text-tertiary",
+      fontType: openSans.className,
+      fontSize: "text-lg",
     },
     {
-      type: "social-profile",
-      content: "twitter / x",
-      href: "https://twitter.com/resonatehq",
-      iconClass: "bx bx-sm bxl-twitter",
+      type: "text",
+      content: "Concurrent, distributed, and durable promises and functions.",
+      textColor: "text-tertiary",
+      fontType: openSans.className,
+      fontSize: "text-lg",
     },
     {
-      type: "social-profile",
-      content: "youtube",
-      href: "https://www.youtube.com/@resonatehqio",
-      iconClass: "bx bx-sm bxl-youtube",
+      type: "text",
+      content: "No proprietary primitives. Extend it to any technology stack.",
+      textColor: "text-tertiary",
+      fontType: openSans.className,
+      fontSize: "text-lg",
+    },
+    {
+      type: "text",
+      content:
+        "Fully decentralized. No central element in the technology stack.",
+      textColor: "text-tertiary",
+      fontType: openSans.className,
+      fontSize: "text-lg",
+    },
+    {
+      type: "text",
+      content: "Free and open source. Don't worry about vendor lock-in.",
+      textColor: "text-tertiary",
+      fontType: openSans.className,
+      fontSize: "text-lg",
+    },
+    {
+      type: "text",
+      content: "More than Durable Execution.",
+      textColor: "text-tertiary",
+      fontType: openSans.className,
+      fontSize: "text-lg",
+    },
+    {
+      type: "text",
+      content:
+        "Durability without the complexity. Enjoy a dead simple programming model for the cloud.",
+      textColor: "text-tertiary",
+      fontType: openSans.className,
+      fontSize: "text-lg",
     },
   ];
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setLoadedItems((prev) => (prev < navItems.length ? prev + 1 : prev));
+      setLoadedItems((prev) => (prev < displayItems.length ? prev + 1 : prev));
     }, 100);
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="flex flex-col w-full max-w-[500px] min-w-[300px] items-center mx-auto bg-slate-900 p-6 font-mono text-green-400">
+    <div className="flex bg-white flex-col w-full max-w-[800px] min-w-[300px] items-center mx-auto p-6 font-mono border border-muted mt-4">
       <div className="flex flex-col space-y-2 w-full">
-        {navItems.slice(0, loadedItems).map((item, index) => (
+        {displayItems.slice(0, loadedItems).map((item, index) => (
           <div key={index} className="w-full min-h-[1rem]">
             {item.type === "text" && (
               <p
-                className={`${item.textColor} whitespace-pre-wrap break-words`}
+                className={`${item.textColor} whitespace-pre-wrap break-words ${item.fontType} ${item.fontSize}`}
               >
                 {item.content}
               </p>
             )}
             {item.type === "ascii" && (
-              <pre className="text-gray-200 leading-none whitespace-pre-wrap break-words">
+              <pre className="text-tertiary leading-none whitespace-pre-wrap break-words">
                 {item.content}
               </pre>
             )}
             {item.type === "link" && (
-              <p className="text-gray-200 hover:text-gray-400 flex items-center gap-x-2 cursor-pointer whitespace-pre-wrap break-words">
+              <p className="text-tertiary hover:text-gray-400 flex items-center gap-x-2 cursor-pointer whitespace-pre-wrap break-words">
                 <a href={item.href} className="flex items-center">
                   <i className="bx bx-sm bx-link mr-2"></i>
                   <span>{item.content}</span>
@@ -135,7 +138,7 @@ const ResonateHQ: React.FC = () => {
               </p>
             )}
             {item.type === "social-profile" && (
-              <p className="cursor-pointer flex items-center gap-x-2 text-gray-200 hover:text-gray-400 whitespace-pre-wrap break-words">
+              <p className="cursor-pointer flex items-center gap-x-2 text-gray-200 hover:text-tertiary whitespace-pre-wrap break-words">
                 <a href={item.href} className="flex items-center">
                   <i className={`${item.iconClass} mr-2`}></i>
                   <span>{item.content}</span>

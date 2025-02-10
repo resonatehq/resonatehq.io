@@ -13,3 +13,10 @@
 .ask-echo {
   cursor: pointer;
 }
+
+.call-graph {
+  background-color: #ffffff; /* Dark background */
+  background-image: url("/images/call-graph.svg");
+  background-size: cover; /* Adjust grid size */
+  background-repeat: repeat;
+}
