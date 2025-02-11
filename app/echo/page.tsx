@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Directory from "@/components/Directory";
 import Social from "@/components/Social";
+import Header from "@/components/Header";
 
 export default function Echo() {
   const [messages, setMessages] = useState([
@@ -61,6 +62,7 @@ export default function Echo() {
 
   return (
     <div className="flex flex-col grid call-graph max-w-screen h-screen overflow-hidden">
+      <Header />
       <Directory />
       {/* Terminal Window */}
       <div className="flex bg-white flex-col w-full max-w-[800px] min-w-[300px] mx-auto font-mono border border-muted mt-4">
