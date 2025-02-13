@@ -19,7 +19,7 @@ export default function RSVP() {
                 </h1>
 
                 <p className="font-light text-xl sm:text-2xl">
-                  Répondez s'il vous plaît to the next community event
+                  Répondez s&apos;il vous plaît to the next community event
                 </p>
                 <Image
                   src="/images/broadcast-mic.svg"
