@@ -9,6 +9,10 @@
       "source": "/subscribe",
       "destination": "https://journal.resonatehq.io/subscribe",
       "permanent": true
+    },
+    {
+      "source": "/rsvp",
+      "destination": "https://forms.gle/BCS5E4UyA4Q1AoKF6"
     }
   ]
 }
