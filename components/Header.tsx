@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Header = () => {
   return (
-    <div className="flex flex-col items-center justify-center p-4">
+    <div className="flex items-center flex-col items-left w-full mb-6 py-4 max-h-[62px]">
       <a href="/">
         <Image
           src="/images/echo-logo.svg"

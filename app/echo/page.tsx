@@ -61,11 +61,11 @@ export default function Echo() {
   };
 
   return (
-    <div className="flex flex-col grid call-graph max-w-screen h-screen overflow-hidden">
+    <div className="flex flex-col call-graph max-w-screen h-screen overflow-hidden">
       <Header />
       <Directory />
       {/* Terminal Window */}
-      <div className="flex bg-white flex-col w-full max-w-[800px] min-w-[300px] mx-auto font-mono border border-muted mt-4">
+      <div className="flex bg-white flex-col w-full max-w-[800px] min-w-[300px] mx-auto font-mono border border-muted mt-2 mb-2">
         {/* Fake Terminal Header */}
         <div className="flex items-center px-6 py-4">
           <span className="w-3 h-3 bg-red-400 rounded-full"></span>

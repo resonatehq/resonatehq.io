@@ -6,10 +6,8 @@ import Header from "@/components/Header";
 export default function Home() {
   return (
     <div className="flex flex-col grid call-graph max-w-screen h-screen overflow-scroll">
-      <Header />
-      <Directory />
       <ResonateHQ />
-      <Social />
+      <Directory />
     </div>
   );
 }

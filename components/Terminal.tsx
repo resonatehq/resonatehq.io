@@ -4,13 +4,11 @@ import Image from "next/image";
 import { ReactNode } from "react";
 
 interface DisplayItem {
-  type: "link" | "text" | "ascii" | "social-profile" | "button" | "image";
+  type: "link" | "text" | "social-profile" | "button" | "image";
   content: string;
   href?: string;
   iconClass?: string;
-  textColor?: string;
-  fontType?: string;
-  fontSize?: string;
+  contentClass?: string;
   onClick?: () => void;
   containerClass?: string; // Allow custom container styles
   imageWidth?: number; // Define width for the image
@@ -23,45 +21,31 @@ interface TerminalProps {
 }
 
 const Terminal: React.FC<TerminalProps> = ({ displayItems }) => {
-  const [loadedItems, setLoadedItems] = useState<number>(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setLoadedItems((prev) => (prev < displayItems.length ? prev + 1 : prev));
-    }, 100);
-    return () => clearInterval(interval);
-  }, [displayItems]);
-
   return (
-    <div className="flex bg-white flex-col w-full max-w-[800px] min-w-[300px] items-center mx-auto py-8 px-12 font-mono border border-1 border-muted mt-2 mb-2">
+    <div className="flex bg-white flex-col w-full max-w-[800px] min-w-[300px] items-center mx-auto py-8 px-12 font-mono border border-4 border-muted mt-2 mb-2">
       <div className="flex flex-col space-y-2 w-full">
-        {displayItems.slice(0, loadedItems).map((item, index) => (
+        {displayItems.map((item, index) => (
           <div key={index} className="w-full min-h-[1rem]">
             {item.type === "text" && (
               <div
-                className={`${item.fontSize} ${
-                  item.containerClass ? item.containerClass : ""
-                }`}
+                className={`${item.containerClass ? item.containerClass : ""}`}
               >
                 <p
-                  className={`${item.textColor} whitespace-pre-wrap break-words ${item.fontType}`}
+                  className={`whitespace-pre-wrap break-words ${item.contentClass} ? ${item.contentClass} : ""`}
                 >
                   {item.content}
                 </p>
               </div>
             )}
-            {item.type === "ascii" && (
-              <pre className="text-tertiary leading-none whitespace-pre-wrap break-words">
-                {item.content}
-              </pre>
-            )}
             {item.type === "link" && (
               <div
-                className={`${item.fontSize} ${
-                  item.containerClass ? item.containerClass : ""
-                }`}
+                className={`${item.containerClass ? item.containerClass : ""}`}
               >
-                <p className="text-tertiary hover:text-gray-400 flex items-center gap-x-2 cursor-pointer whitespace-pre-wrap break-words">
+                <p
+                  className={`text-tertiary hover:text-gray-400 flex items-center gap-x-2 cursor-pointer whitespace-pre-wrap break-words ${
+                    item.contentClass ? item.contentClass : ""
+                  }`}
+                >
                   <a href={item.href} className="flex items-center">
                     <i className="bx bx-sm bx-link mr-2"></i>
                     <span className="hover:underline">{item.content}</span>
@@ -71,7 +55,9 @@ const Terminal: React.FC<TerminalProps> = ({ displayItems }) => {
             )}
             {item.type === "social-profile" && (
               <div className={`${item.containerClass} || ""`}>
-                <p className="cursor-pointer flex items-center gap-x-2 text-tertiary hover:text-muted whitespace-pre-wrap break-words">
+                <p
+                  className={`cursor-pointer flex items-center gap-x-2 text-tertiary hover:text-muted whitespace-pre-wrap break-words ${item.contentClass} ? ${item.contentClass} : ""`}
+                >
                   <a href={item.href} className="flex items-center">
                     <i className={`${item.iconClass} mr-2`}></i>
                     <span className="hover:underline">{item.content}</span>
@@ -83,7 +69,7 @@ const Terminal: React.FC<TerminalProps> = ({ displayItems }) => {
               <div className={`${item.containerClass} || ""`}>
                 <button
                   onClick={item.onClick}
-                  className="mt-2 px-4 py-2 text-white bg-tertiary hover:bg-muted transition rounded-md"
+                  className={`mt-2 px-4 py-2 text-white bg-secondary hover:bg-muted transition rounded-md ${item.contentClass} ? ${item.contentClass} : ""`}
                 >
                   {item.content}
                 </button>
