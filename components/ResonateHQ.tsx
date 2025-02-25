@@ -15,10 +15,10 @@ const openSans = Open_Sans({
 const ResonateHQ: React.FC = () => {
   return (
     <div
-      className={`${openSans.className} flex bg-white flex-col w-full max-w-[800px] min-w-[300px] items-center mx-auto border-l-2 border-r-2 border-tertiary`}
+      className={`${openSans.className} flex bg-white flex-col w-full max-w-[800px] min-w-[300px] items-center mx-auto border-l-2 border-r-2 border-muted`}
     >
-      <div className="bg-tertiary px-12 py-8 w-full">
-        <p className="text-primary text-2xl text-center">
+      <div className="bg-black px-12 py-12 w-full">
+        <p className="text-2xl text-primary text-center">
           "The question is no longer whether an application is concurrent and
           distributed, but only to what extent an application is concurrent and
           distributed."
@@ -199,6 +199,22 @@ const ResonateHQ: React.FC = () => {
           <p className="text-2xl py-6">for a delightful developer experience</p>
         </div>
       </div>
+      <div className="bg-black px-12 py-12 mb-24 w-full">
+        <Image
+          src="/images/lamp.svg"
+          alt="promise and function call graph"
+          width={40}
+          height={40}
+          className="mx-auto mb-4"
+        />
+        <p className="text-primary text-2xl text-center">
+          It is common for the complexity that Concurrency and Distribution
+          introduce to be managed at the application level, resulting in an
+          awful developer experience. Distributed Async Await pushes that
+          complexity to the platform level, offering a delightful developer
+          experience.
+        </p>
+      </div>
       <div className="grid grid-cols-[1fr,150px,1fr] items-center text-center">
         <div></div>
         <div className="border-2 border-tertiary flex flex-col items-center justify-center h-[150px] rounded-full">
@@ -234,8 +250,8 @@ const ResonateHQ: React.FC = () => {
       <div className="grid grid-cols-[1fr,1fr] items-center text-center">
         <div className="border-r-2 border-tertiary flex flex-col items-center justify-center h-[300px]"></div>
         <div className="pl-12 text-2xl text-tertiary">
-          <p>...so currency,</p>
-          <p className="font-bold py-6">and distribution,</p>
+          <p>...so Concurrency,</p>
+          <p className="font-bold py-6">and Distribution,</p>
           <p>become first class citizens</p>
         </div>
       </div>
@@ -273,7 +289,24 @@ const ResonateHQ: React.FC = () => {
           <p className="text-2xl py-6">without any proprietary primitives</p>
         </div>
       </div>
-      <div className="bg-tertiary px-12 py-8 w-full">
+      <div className="bg-black px-12 py-12 mb-24 w-full">
+        <Image
+          src="/images/lamp.svg"
+          alt="promise and function call graph"
+          width={40}
+          height={40}
+          className="mx-auto mb-4"
+        />
+        <p className="text-primary text-2xl text-center">
+          Async Await pushes Concurrency to the platform level, but does nothing
+          to address Distribution. Distributed Async Await addresses both
+          Concurrency and Distribution at the platform level. Where many Durable
+          Execution platforms force developers to work with proprietary
+          primitives like workflows and activities, Distributed Async Await
+          still uses just promises and functions.
+        </p>
+      </div>
+      <div className="bg-tertiary px-12 py-12 w-full">
         <p className="text-primary text-2xl text-center">
           "Perfection is achieved, not when there is nothing more to add, but
           when there is nothing left to take away."

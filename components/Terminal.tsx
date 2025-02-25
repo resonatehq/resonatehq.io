@@ -13,7 +13,6 @@ interface DisplayItem {
   containerClass?: string; // Allow custom container styles
   imageWidth?: number; // Define width for the image
   imageHeight?: number; // Define height for the image
-  component?: ReactNode;
 }
 
 interface TerminalProps {
@@ -88,9 +87,6 @@ const Terminal: React.FC<TerminalProps> = ({ displayItems }) => {
                   height={item.imageHeight || 100} // Default to 100px if not specified
                 />
               </div>
-            )}
-            {item.type === "component" && item.component && (
-              <div className={item.containerClass || ""}>{item.component}</div>
             )}
           </div>
         ))}

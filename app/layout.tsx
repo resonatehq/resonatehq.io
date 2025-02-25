@@ -80,7 +80,7 @@ export default function RootLayout({
 
       {/* Kapa.ai Script */}
 
-      <body className="bg-tertiary font-mono">
+      <body className="font-mono">
         {children}
         <CookieBanner />
       </body>
