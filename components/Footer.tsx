@@ -67,7 +67,7 @@ const Footer: React.FC = () => {
         </div>
         <div className="mx-auto">
           <a
-            href="https://www.linkedin.com/company/resonatehq"
+            href="https://www.linkedin.com/company/resonatehqio"
             className="text-tertiary border-b border-transparent cursor-pointer hover:text-secondary flex items-center gap-x-2"
             target="_blank"
             rel="noopener noreferrer"

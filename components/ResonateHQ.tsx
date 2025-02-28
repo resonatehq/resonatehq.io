@@ -11,6 +11,16 @@ const openSans = Open_Sans({
   display: "swap",
 });
 
+const smoothScrollTo = (id: string) => {
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }
+};
+
 const ResonateHQ: React.FC = () => {
   return (
     <div
@@ -58,7 +68,7 @@ const ResonateHQ: React.FC = () => {
 
         <div className="py-8 flex justify-center items-center">
           <button
-            onClick={() => (window.location.href = "#start")}
+            onClick={() => smoothScrollTo("start-with-distributed-async-await")}
             className="font-mono mt-2 mx-4 px-4 py-2 flex items-center text-primary hover:bg-secondary bg-dark transition"
           >
             Learn more
@@ -90,7 +100,7 @@ const ResonateHQ: React.FC = () => {
       <div className="grid grid-cols-[1fr,150px,1fr] items-center text-center">
         <div></div>
         <div
-          id="start"
+          id="start-with-distributed-async-await"
           className="border-2 border-tertiary flex flex-col items-center justify-center h-[150px] rounded-full"
         >
           <Image
@@ -343,7 +353,7 @@ const ResonateHQ: React.FC = () => {
 
         <div className="py-8 flex justify-center items-center">
           <button
-            onClick={() => (window.location.href = "#start")}
+            onClick={() => smoothScrollTo("start-with-resonate")}
             className="font-mono mt-2 mx-4 px-4 py-2 flex items-center text-primary hover:bg-secondary bg-dark transition"
           >
             Learn more
@@ -357,7 +367,7 @@ const ResonateHQ: React.FC = () => {
           </button>
           <button
             onClick={() =>
-              (window.location.href = "https://resonatehq.io/discord")
+              (window.location.href = "https://docs.resonatehq.io/get-started/")
             }
             className="font-mono flex items-center mt-2 mx-4 px-4 py-2 text-primary hover:bg-secondary bg-dark transition"
           >
@@ -372,7 +382,10 @@ const ResonateHQ: React.FC = () => {
           </button>
         </div>
       </div>
-      <div className="grid grid-cols-[1fr,150px,1fr] items-center text-center">
+      <div
+        id="start-with-resonate"
+        className="grid grid-cols-[1fr,150px,1fr] items-center text-center"
+      >
         <div></div>
         <div className="border-2 border-muted border-dashed flex flex-col items-center justify-center h-[150px]">
           <Image
