@@ -77,7 +77,7 @@ const Footer: React.FC = () => {
         </div>
         <div className="mx-auto">
           <a
-            href="https://twitter.com/resonatehq"
+            href="https://twitter.com/resonatehqio"
             className="text-tertiary border-b border-transparent cursor-pointer hover:text-secondary flex items-center gap-x-2"
             target="_blank"
             rel="noopener noreferrer"

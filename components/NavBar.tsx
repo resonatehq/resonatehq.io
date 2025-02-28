@@ -84,7 +84,7 @@ const NavBar: React.FC = () => {
               <i className="bx bx-sm bxl-linkedin"></i> linkedin
             </a>
             <a
-              href="https://twitter.com/resonatehq"
+              href="https://twitter.com/resonatehqio"
               className="flex items-center gap-x-2 text-tertiary hover:text-secondary"
               target="_blank"
               rel="noopener noreferrer"
