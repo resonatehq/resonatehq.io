@@ -1,145 +1,124 @@
 import React from "react";
+import { Open_Sans } from "next/font/google";
+
+const openSans = Open_Sans({
+  weight: ["300", "600", "700"],
+  subsets: ["latin"],
+  display: "swap",
+});
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-white p-8 flex flex-col items-center">
-      {/* Links section */}
+    <footer className="p-8 flex flex-col items-center w-full mx-auto bg-primary border-t-2 border-muted">
+      {/* Links Section */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full max-w-4xl mb-12 text-center">
         <div className="mx-auto">
           <a
-            href="/features"
-            className="text-slate-700 border-b border-transparent hover:border-slate-700 cursor-pointer hover:text-slate-500"
+            href="https://journal.resonatehq.io"
+            className="text-tertiary border-b border-transparent cursor-pointer hover:text-secondary flex items-center gap-x-2"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Features
+            <i className="bx bx-sm bx-pen"></i> journal
           </a>
         </div>
         <div className="mx-auto">
           <a
             href="https://docs.resonatehq.io"
-            className="text-slate-700 border-b border-transparent hover:border-slate-700 cursor-pointer hover:text-slate-500"
+            className="text-tertiary border-b border-transparent cursor-pointer hover:text-secondary flex items-center gap-x-2"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Docs
+            <i className="bx bx-sm bx-code-block"></i> documentation
           </a>
         </div>
         <div className="mx-auto">
           <a
-            href="https://resonatehqio.substack.com/s/blog"
-            className="text-slate-700 border-b border-transparent hover:border-slate-700 cursor-pointer hover:text-slate-500"
+            href="/rsvp"
+            className="text-tertiary border-b border-transparent cursor-pointer hover:text-secondary flex items-center gap-x-2"
           >
-            Blog
+            <i className="bx bx-sm bx-calendar-event"></i> rsvp
+          </a>
+        </div>
+        <div className="mx-auto">
+          <button className="text-tertiary border-b border-transparent cursor-pointer hover:text-secondary flex items-center gap-x-2 ask-echo">
+            <i className="bx bx-sm bx-chat"></i> echo
+          </button>
+        </div>
+        <div className="mx-auto">
+          <a
+            href="https://resonatehq.io/discord"
+            className="text-tertiary border-b border-transparent cursor-pointer hover:text-secondary flex items-center gap-x-2"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="bx bx-sm bxl-discord"></i> discord
           </a>
         </div>
         <div className="mx-auto">
           <a
-            href="/python-sdk"
-            className="text-slate-700 border-b border-transparent hover:border-slate-700 cursor-pointer hover:text-slate-500"
+            href="https://github.com/resonatehq"
+            className="text-tertiary border-b border-transparent cursor-pointer hover:text-secondary flex items-center gap-x-2"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Python SDK
+            <i className="bx bx-sm bxl-github"></i> github
           </a>
         </div>
         <div className="mx-auto">
           <a
-            href="/typescript-sdk"
-            className="text-slate-700 border-b border-transparent hover:border-slate-700 cursor-pointer hover:text-slate-500"
+            href="https://www.linkedin.com/company/resonatehqio"
+            className="text-tertiary border-b border-transparent cursor-pointer hover:text-secondary flex items-center gap-x-2"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            TypeScript SDK
+            <i className="bx bx-sm bxl-linkedin"></i> linkedin
           </a>
         </div>
         <div className="mx-auto">
           <a
-            href="https://github.com/resonatehq/resonate"
-            className="text-slate-700 border-b border-transparent hover:border-slate-700 cursor-pointer hover:text-slate-500"
+            href="https://twitter.com/resonatehq"
+            className="text-tertiary border-b border-transparent cursor-pointer hover:text-secondary flex items-center gap-x-2"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Server
+            <i className="bx bx-sm bxl-twitter"></i> twitter
           </a>
         </div>
         <div className="mx-auto">
           <a
-            href="/webinars"
-            className="text-slate-700 border-b border-transparent hover:border-slate-700 cursor-pointer hover:text-slate-500"
+            href="https://www.youtube.com/@resonatehqio"
+            className="text-tertiary border-b border-transparent cursor-pointer hover:text-secondary flex items-center gap-x-2"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Webinars
-          </a>
-        </div>
-        <div className="mx-auto">
-          <a
-            href="/how-it-works"
-            className="text-slate-700 border-b border-transparent hover:border-slate-700 cursor-pointer hover:text-slate-500"
-          >
-            How it works
-          </a>
-        </div>
-        <div className="mx-auto">
-          <a
-            href="https://github.com/resonatehq/durable-promise-specification"
-            className="text-slate-700 border-b border-transparent hover:border-slate-700 cursor-pointer hover:text-slate-500"
-          >
-            Durable Promise spec
-          </a>
-        </div>
-        <div className="mx-auto">
-          <a
-            href="https://journal.resonatehq.io/subscribe"
-            className="text-slate-700 border-b border-transparent hover:border-slate-700 cursor-pointer hover:text-slate-500"
-          >
-            Subscribe
+            <i className="bx bx-sm bxl-youtube"></i> youtube
           </a>
         </div>
         <div className="mx-auto">
           <a
             href="/privacy-policy"
-            className="text-slate-700 border-b border-transparent hover:border-slate-700 cursor-pointer hover:text-slate-500"
+            className="text-tertiary border-b border-transparent cursor-pointer hover:text-secondary flex items-center gap-x-2"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Privacy Policy
+            <i className="bx bx-sm bx-info-circle"></i> privacy policy
           </a>
         </div>
         <div className="mx-auto">
           <a
             href="/terms-and-conditions"
-            className="text-slate-700 border-b border-transparent hover:border-slate-700 cursor-pointer hover:text-slate-500"
+            className="text-tertiary border-b border-transparent cursor-pointer hover:text-secondary flex items-center gap-x-2"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Terms and Conditions
+            <i className="bx bx-sm bx-info-circle"></i> terms and conditions
           </a>
         </div>
       </div>
 
-      {/* Social media icons */}
-      <div className="flex justify-center py-6 space-x-4">
-        <a
-          href="https://twitter.com/resonatehqio"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Resonate HQ Twitter"
-        >
-          <i className="bx bx-sm bxl-twitter text-slate-700 hover:text-slate-500 cursor-pointer"></i>
-        </a>
-        <a
-          href="https://resonatehq.io/discord"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Resonate HQ Discord"
-        >
-          <i className="bx bx-sm bxl-discord text-slate-700 hover:text-slate-500 cursor-pointer"></i>
-        </a>
-        <a
-          href="https://github.com/resonatehq/resonate"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Resonate HQ GitHub"
-        >
-          <i className="bx bx-sm bxl-github text-slate-700 hover:text-slate-500 cursor-pointer"></i>
-        </a>
-        <a
-          href="https://www.linkedin.com/company/resonatehqio"
-          rel="noopener noreferrer"
-          aria-label="Resonate HQ LinkedIn"
-        >
-          <i className="bx bx-sm bxl-linkedin text-slate-700 hover:text-slate-500 cursor-pointer"></i>
-        </a>
-      </div>
-
-      {/* Copyright section */}
-      <p className="text-md text-center">
+      {/* Copyright Section */}
+      <p className={`text-md text-center ${openSans.className}`}>
         Copyright &copy; {new Date().getFullYear()} Resonate HQ, Inc.
       </p>
     </footer>

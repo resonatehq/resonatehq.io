@@ -9,8 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        // from docusaurus
         sans: [
+          "Open Sans",
           "system-ui",
           "-apple-system",
           "Segoe UI",
@@ -19,15 +19,6 @@ const config: Config = {
           "Cantarell",
           "Noto Sans",
           "sans-serif",
-          "BlinkMacSystemFont",
-          "Segoe UI",
-          "Helvetica",
-          "Arial",
-          "sans-serif",
-          "Apple Color Emoji",
-          "Segoe UI Emoji",
-          "Segoe UI Symbol",
-          "Open Sans",
         ],
         mono: [
           "SFMono-Regular",
@@ -60,6 +51,12 @@ const config: Config = {
           "800": "#1c1e21",
           "900": "#1b1b1d",
         },
+        primary: "#FFFFFF",
+        secondary: "#88A7F6",
+        tertiary: "#353F58",
+        accent: "#63E6BE",
+        muted: "#b0b8c3",
+        dark: "#080A0E",
       },
     },
   },

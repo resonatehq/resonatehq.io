@@ -7,7 +7,7 @@
     "0f3cf17e-47fa-427a-b0fd-464d33f0bb16"
   );
   script.setAttribute("data-project-name", "Ask Echo");
-  script.setAttribute("data-project-color", "#1b1b1b");
+  script.setAttribute("data-project-color", "#080A0E");
   script.setAttribute("data-project-logo", "/images/echo-square.png");
   script.setAttribute(
     "data-modal-disclaimer",
@@ -25,10 +25,12 @@
     "Ask me a question about Resonate."
   );
   script.setAttribute("data-mode-open-on-command-k", "true");
+  script.setAttribute("data-button-hide", "true");
+  script.setAttribute("data-modal-override-open-class-ask-ai", "ask-echo");
   script.setAttribute("data-modal-example-questions-title", "For example...");
   script.setAttribute("data-search-mode-enabled", "true");
   script.setAttribute("data-switch-show-icons", "true");
-  script.setAttribute("data-switch-color", "#1b1b1b");
+  script.setAttribute("data-switch-color", "#080A0E");
   script.setAttribute("data-button-height", "7.5rem");
   script.setAttribute("data-button-width", "5.7rem");
   script.setAttribute("data-button-text-color", "#efefef");

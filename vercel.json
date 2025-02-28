@@ -11,6 +11,26 @@
       "permanent": true
     },
     {
+      "source": "/features",
+      "destination": "https://docs.resonatehq.io/evaluate/features",
+      "permanent": true
+    },
+    {
+      "source": "/typescript-sdk",
+      "destination": "https://docs.resonatehq.io/develop/typescript",
+      "permanent": true
+    },
+    {
+      "source": "/python-sdk",
+      "destination": "https://docs.resonatehq.io/develop/python",
+      "permanent": true
+    },
+    {
+      "source": "/how-it-works",
+      "destination": "https://docs.resonatehq.io/evaluate/how-it-works",
+      "permanent": true
+    },
+    {
       "source": "/rsvp",
       "destination": "https://forms.gle/BCS5E4UyA4Q1AoKF6"
     }

@@ -8,106 +8,171 @@ const NavBar: React.FC = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <div>
-      {/* Announcement Bar */}
-      <div className="text-xl w-full bg-gradient-to-r bg-stone-900 text-white font-light text-center py-2 sm:py-6">
-        <a href="/rsvp" className="hover:underline">
-          RSVP to the next community event!
-        </a>{" "}
-        🚀
-      </div>
-
+    <div className="fixed w-full z-50">
       {/* Navbar */}
-      <nav className="bg-white border-b border-slate-200">
-        {/* Logo */}
-        <div className="flex justify-center py-2 sm:py-6">
+      <nav className="bg-primary border-b-2 border-muted">
+        <div className="flex justify-between items-center px-6 lg:px-12 py-3">
+          {/* Logo - Now inline with menu */}
           <a href="/" className="flex items-center">
             <Image
               src="/images/echo-logo.svg"
               alt="Resonate Logo"
-              height={40}
-              width={40}
-              className="max-h-[40px]"
+              height={32}
+              width={32}
+              className="max-h-[32px]"
             />
           </a>
-        </div>
 
-        {/* Menu Button (Mobile) */}
-        <div className="flex justify-center lg:hidden sm:mb-3">
+          {/* Mobile Menu Button */}
           <button
             onClick={toggleMenu}
-            className="pb-2 pl-2 pr-2 text-slate-700 hover:text-zinc-400"
+            className="xl:hidden text-tertiary hover:text-secondary text-3xl font-bold"
           >
-            {isMenuOpen ? (
-              <span className="text-3xl font-bold">&times;</span> // Close Menu (X)
-            ) : (
-              <span className="text-3xl font-bold">&#9776;</span> // Hamburger Icon (3 lines)
-            )}
+            {isMenuOpen ? "✕" : "☰"}
           </button>
+
+          {/* Desktop Navigation Links */}
+          <div className="hidden xl:flex xl:space-x-6 text-md font-light">
+            <a
+              href="https://journal.resonatehq.io"
+              className="flex items-center gap-x-2 text-tertiary hover:text-secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="bx bx-sm bx-pen"></i> journal
+            </a>
+            <a
+              href="https://docs.resonatehq.io"
+              className="flex items-center gap-x-2 text-tertiary hover:text-secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="bx bx-sm bx-code-block"></i> documentation
+            </a>
+            <a
+              href="/rsvp"
+              className="flex items-center gap-x-2 text-tertiary hover:text-secondary"
+            >
+              <i className="bx bx-sm bx-calendar-event"></i> rsvp
+            </a>
+            {/* Custom Echo button (not a link) */}
+            <button className="flex items-center gap-x-2 text-tertiary hover:text-secondary ask-echo">
+              <i className="bx bx-sm bx-chat"></i> echo
+            </button>
+            <a
+              href="https://resonatehq.io/discord"
+              className="flex items-center gap-x-2 text-tertiary hover:text-secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="bx bx-sm bxl-discord"></i> discord
+            </a>
+            <a
+              href="https://github.com/resonatehq"
+              className="flex items-center gap-x-2 text-tertiary hover:text-secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="bx bx-sm bxl-github"></i> github
+            </a>
+            <a
+              href="https://www.linkedin.com/company/resonatehqio"
+              className="flex items-center gap-x-2 text-tertiary hover:text-secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="bx bx-sm bxl-linkedin"></i> linkedin
+            </a>
+            <a
+              href="https://twitter.com/resonatehq"
+              className="flex items-center gap-x-2 text-tertiary hover:text-secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="bx bx-sm bxl-twitter"></i> twitter
+            </a>
+            <a
+              href="https://www.youtube.com/@resonatehqio"
+              className="flex items-center gap-x-2 text-tertiary hover:text-secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="bx bx-sm bxl-youtube"></i> youtube
+            </a>
+          </div>
         </div>
 
-        {/* Navigation Links */}
-        <div
-          className={`${
-            isMenuOpen ? "block" : "hidden"
-          } lg:flex lg:flex-row lg:justify-center lg:space-x-8 text-center py-4`}
-        >
-          {/* Navigation Items */}
-          <a
-            href="/features"
-            className="block py-2 lg:py-0 text-lg font-light text-slate-700 hover:text-slate-500 cursor-pointer"
-          >
-            Features
-          </a>
-          <a
-            href="https://docs.resonatehq.io"
-            className="block py-2 lg:py-0 text-lg font-light text-slate-700 hover:text-slate-500 cursor-pointer"
-          >
-            Docs
-          </a>
-          <a
-            href="https://journal.resonatehq.io/s/blog"
-            className="block py-2 lg:py-0 text-lg font-light text-slate-700 hover:text-slate-500 cursor-pointer"
-          >
-            Blog
-          </a>
-          <a
-            href="https://journal.resonatehq.io/s/webinars"
-            className="block py-2 lg:py-0 text-lg font-light text-slate-700 hover:text-slate-500 cursor-pointer"
-          >
-            Webinars
-          </a>
-          <a
-            href="/how-it-works"
-            className="block py-2 lg:py-0 text-lg font-light text-slate-700 hover:text-slate-500 cursor-pointer"
-          >
-            How it works
-          </a>
-          <a
-            href="https://resonatehq.io/discord"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Resonate HQ Discord"
-            className="block py-2 lg:py-0 text-lg font-light text-slate-700 hover:text-slate-500 cursor-pointer"
-          >
-            Discord
-          </a>
-          <a
-            href="https://github.com/resonatehq/resonate"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Resonate GitHub"
-            className="block py-2 lg:py-0 text-lg font-light text-slate-700 hover:text-slate-500 cursor-pointer"
-          >
-            GitHub
-          </a>
-          <a
-            href="https://journal.resonatehq.io/subscribe"
-            className="block py-2 lg:py-0 text-lg font-light text-slate-700 hover:text-slate-500 cursor-pointer"
-          >
-            Subscribe
-          </a>
-        </div>
+        {/* Mobile Menu - Display when toggled */}
+        {isMenuOpen && (
+          <div className="lg:hidden flex flex-col text-center py-4">
+            <a
+              href="https://journal.resonatehq.io"
+              className="py-2 flex items-center justify-center gap-x-2 text-md font-light text-tertiary hover:text-secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="bx bx-sm bx-pen"></i> journal
+            </a>
+            <a
+              href="https://docs.resonatehq.io"
+              className="py-2 flex items-center justify-center gap-x-2 text-md font-light text-tertiary hover:text-secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="bx bx-sm bx-code-block"></i> documentation
+            </a>
+            <a
+              href="/rsvp"
+              className="py-2 flex items-center justify-center gap-x-2 text-md font-light text-tertiary hover:text-secondary"
+            >
+              <i className="bx bx-sm bx-calendar-event"></i> rsvp
+            </a>
+            {/* Custom Echo button (not a link) */}
+            <button className="py-2 flex items-center justify-center gap-x-2 text-md font-light text-tertiary hover:text-secondary ask-echo">
+              <i className="bx bx-sm bx-chat"></i> echo
+            </button>
+            <a
+              href="https://resonatehq.io/discord"
+              className="py-2 flex items-center justify-center gap-x-2 text-md font-light text-tertiary hover:text-secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="bx bx-sm bxl-discord"></i> discord
+            </a>
+            <a
+              href="https://github.com/resonatehq"
+              className="py-2 flex items-center justify-center gap-x-2 text-md font-light text-tertiary hover:text-secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="bx bx-sm bxl-github"></i> github
+            </a>
+            <a
+              href="https://www.linkedin.com/company/resonatehq"
+              className="py-2 flex items-center justify-center gap-x-2 text-md font-light text-tertiary hover:text-secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="bx bx-sm bxl-linkedin"></i> linkedin
+            </a>
+            <a
+              href="https://twitter.com/resonatehq"
+              className="py-2 flex items-center justify-center gap-x-2 text-md font-light text-tertiary hover:text-secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="bx bx-sm bxl-twitter"></i> twitter
+            </a>
+            <a
+              href="https://www.youtube.com/@resonatehqio"
+              className="py-2 flex items-center justify-center gap-x-2 text-md font-light text-tertiary hover:text-secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="bx bx-sm bxl-youtube"></i> youtube
+            </a>
+          </div>
+        )}
       </nav>
     </div>
   );
