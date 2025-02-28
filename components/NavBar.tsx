@@ -84,7 +84,7 @@ const NavBar: React.FC = () => {
               <i className="bx bx-sm bxl-linkedin"></i> linkedin
             </a>
             <a
-              href="https://twitter.com/resonatehq"
+              href="https://twitter.com/resonatehqio"
               className="flex items-center gap-x-2 text-tertiary hover:text-secondary"
               target="_blank"
               rel="noopener noreferrer"
@@ -148,7 +148,7 @@ const NavBar: React.FC = () => {
               <i className="bx bx-sm bxl-github"></i> github
             </a>
             <a
-              href="https://www.linkedin.com/company/resonatehq"
+              href="https://www.linkedin.com/company/resonatehqio"
               className="py-2 flex items-center justify-center gap-x-2 text-md font-light text-tertiary hover:text-secondary"
               target="_blank"
               rel="noopener noreferrer"
@@ -156,7 +156,7 @@ const NavBar: React.FC = () => {
               <i className="bx bx-sm bxl-linkedin"></i> linkedin
             </a>
             <a
-              href="https://twitter.com/resonatehq"
+              href="https://twitter.com/resonatehqio"
               className="py-2 flex items-center justify-center gap-x-2 text-md font-light text-tertiary hover:text-secondary"
               target="_blank"
               rel="noopener noreferrer"
