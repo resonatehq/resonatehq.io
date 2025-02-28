@@ -1,5 +1,12 @@
-import NavBar from "@/components/ResonateHQ";
+import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
+import { Open_Sans } from "next/font/google";
+
+const openSans = Open_Sans({
+  weight: ["300", "600", "700"],
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export default function TermsAndConditions() {
   return (
@@ -7,13 +14,15 @@ export default function TermsAndConditions() {
       {/* Nav */}
       <NavBar />
 
-      <div className="flex flex-row justify-center w-full">
-        <div className="text-slate-700 w-full max-w-[1200px] px-4 lg:px-10">
+      <div
+        className={`flex flex-row justify-center w-full ${openSans.className}`}
+      >
+        <div className="text-tertiary w-full max-w-[800px] px-4 lg:px-10 py-24">
           {/* Hero */}
           <section className="overflow-hidden">
             <div className="mx-auto flex flex-col items-center pb-24 pt-16">
               <div className="text-center">
-                <h1 className="text-4xl pb-16 font-light tracking-tight sm:text-8xl">
+                <h1 className="text-4xl pb-16 font-light tracking-tight">
                   Terms and Conditions
                 </h1>
 
@@ -110,11 +119,9 @@ export default function TermsAndConditions() {
               </div>
             </div>
           </section>
-
-          {/* Footer */}
-          <Footer />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

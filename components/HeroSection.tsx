@@ -27,7 +27,7 @@ const HeroSection: React.FC = () => {
   });
 
   return (
-    <div className="relative overflow-hidden pt-6 pb-6 md:pt-12 md:pb-12">
+    <div className="relative overflow-hidden pt-6 pb-6">
       <div className="text-center">
         <div className="relative inline-block">
           <h1 className="text-4xl tracking-tight text-tertiary">

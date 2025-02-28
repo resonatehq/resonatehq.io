@@ -3,8 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { Open_Sans } from "next/font/google";
 import HeroSection from "@/components/HeroSection";
-import ConcurrencyGrid from "./ConcurrencyGrid";
-import DistributionGrid from "./DistributionGrid";
+import CodeExamples from "@/components/CodeExamples";
 
 const openSans = Open_Sans({
   weight: ["300", "600", "700"],
@@ -17,11 +16,11 @@ const ResonateHQ: React.FC = () => {
     <div
       className={`${openSans.className} flex bg-white flex-col w-full max-w-[800px] min-w-[300px] items-center mx-auto border-l-2 border-r-2 border-muted`}
     >
-      <div className="bg-black px-12 py-12 w-full">
+      <div className="bg-dark px-12 py-12 w-full border-b-2 border-muted mt-12">
         <p className="text-2xl text-primary text-center">
-          "The question is no longer whether an application is concurrent and
-          distributed, but only to what extent an application is concurrent and
-          distributed."
+          &quot;The question is no longer whether an application is concurrent
+          and distributed, but only to what extent an application is concurrent
+          and distributed.&quot;
         </p>
         <p className="text-primary text-2xl text-center italic font-bold mt-4">
           — Dominik Tornow
@@ -60,7 +59,7 @@ const ResonateHQ: React.FC = () => {
         <div className="py-8 flex justify-center items-center">
           <button
             onClick={() => (window.location.href = "#start")}
-            className="mt-2 mx-4 px-4 py-2 flex items-center text-white hover:bg-secondary bg-tertiary transition"
+            className="font-mono mt-2 mx-4 px-4 py-2 flex items-center text-primary hover:bg-secondary bg-dark transition"
           >
             Learn more
             <Image
@@ -75,7 +74,7 @@ const ResonateHQ: React.FC = () => {
             onClick={() =>
               (window.location.href = "https://resonatehq.io/discord")
             }
-            className="flex items-center mt-2 mx-4 px-4 py-2 text-white hover:bg-secondary bg-tertiary transition"
+            className="font-mono flex items-center mt-2 mx-4 px-4 py-2 text-white hover:bg-secondary bg-dark transition"
           >
             Join us
             <Image
@@ -199,7 +198,7 @@ const ResonateHQ: React.FC = () => {
           <p className="text-2xl py-6">for a delightful developer experience</p>
         </div>
       </div>
-      <div className="bg-black px-12 py-12 mb-24 w-full">
+      <div className="bg-dark px-12 py-12 mb-24 w-full border-b-2 border-t-2 border-muted">
         <Image
           src="/images/lamp.svg"
           alt="promise and function call graph"
@@ -208,8 +207,8 @@ const ResonateHQ: React.FC = () => {
           className="mx-auto mb-4"
         />
         <p className="text-primary text-2xl text-center">
-          It is common for the complexity that Concurrency and Distribution
-          introduce to be managed at the application level, resulting in an
+          It is common to manage the complexity that Concurrency and
+          Distribution introducem at the application level, resulting in an
           awful developer experience. Distributed Async Await pushes that
           complexity to the platform level, offering a delightful developer
           experience.
@@ -289,7 +288,7 @@ const ResonateHQ: React.FC = () => {
           <p className="text-2xl py-6">without any proprietary primitives</p>
         </div>
       </div>
-      <div className="bg-black px-12 py-12 mb-24 w-full">
+      <div className="bg-dark px-12 py-12 w-full border-b-2 border-t-2 border-muted">
         <Image
           src="/images/lamp.svg"
           alt="promise and function call graph"
@@ -299,23 +298,24 @@ const ResonateHQ: React.FC = () => {
         />
         <p className="text-primary text-2xl text-center">
           Async Await pushes Concurrency to the platform level, but does nothing
-          to address Distribution. Distributed Async Await addresses both
-          Concurrency and Distribution at the platform level. Where many Durable
-          Execution platforms force developers to work with proprietary
-          primitives like workflows and activities, Distributed Async Await
-          still uses just promises and functions.
+          to address Distribution. Unlike Async Await, Distributed Async Await
+          addresses both Concurrency and Distribution at the platform level.
+          Where many Durable Execution solutions force developers to work with
+          proprietary primitives like workflows and activities, Distributed
+          Async Await, like Async Await, uses just promises and functions.
         </p>
       </div>
-      <div className="bg-tertiary px-12 py-12 w-full">
+
+      {/* <div className="bg-tertiary px-12 py-12 w-full">
         <p className="text-primary text-2xl text-center">
-          "Perfection is achieved, not when there is nothing more to add, but
-          when there is nothing left to take away."
+          &quot;Perfection is achieved, not when there is nothing more to add,
+          but when there is nothing left to take away.&quot;
         </p>
         <p className="text-primary text-2xl text-center italic font-bold mt-4">
           — Antoine de Saint-Exupéry
         </p>
-      </div>
-      <div className="flex flex-col space-y-4 md:space-y-12 bg-primary px-12 py-8 w-full">
+      </div> */}
+      <div className="flex flex-col space-y-4 md:space-y-12 bg-primary px-12 py-8 w-full mb-24">
         <div>
           <p className="text-tertiary text-md flex items-center">
             <Image
@@ -340,10 +340,11 @@ const ResonateHQ: React.FC = () => {
             of the Distributed Async Await specification
           </p>
         </div>
+
         <div className="py-8 flex justify-center items-center">
           <button
             onClick={() => (window.location.href = "#start")}
-            className="mt-2 mx-4 px-4 py-2 flex items-center text-white hover:bg-secondary bg-tertiary transition"
+            className="font-mono mt-2 mx-4 px-4 py-2 flex items-center text-primary hover:bg-secondary bg-dark transition"
           >
             Learn more
             <Image
@@ -358,7 +359,7 @@ const ResonateHQ: React.FC = () => {
             onClick={() =>
               (window.location.href = "https://resonatehq.io/discord")
             }
-            className="flex items-center mt-2 mx-4 px-4 py-2 text-white hover:bg-secondary bg-tertiary transition"
+            className="font-mono flex items-center mt-2 mx-4 px-4 py-2 text-primary hover:bg-secondary bg-dark transition"
           >
             Try it
             <Image
@@ -370,6 +371,86 @@ const ResonateHQ: React.FC = () => {
             />
           </button>
         </div>
+      </div>
+      <div className="grid grid-cols-[1fr,150px,1fr] items-center text-center">
+        <div></div>
+        <div className="border-2 border-muted border-dashed flex flex-col items-center justify-center h-[150px]">
+          <Image
+            src="/images/dependability.svg"
+            alt="Echo Icon"
+            width={40}
+            height={40}
+          />
+        </div>
+        {/* Empty Third Column */}
+        <div></div>
+      </div>
+      <div className="flex flex-col space-y-4 md:space-y-12 w-full px-12">
+        <div className="grid grid-cols-[1fr,1fr] items-center text-center">
+          <div className="pr-12 md:pr-0 text-2xl text-tertiary max-w-[300px]">
+            <p className="py-2">Bringing</p>
+            <p className="font-bold py-6">reliability and scalability</p>
+            <p className="py-2">to the language you love</p>
+          </div>
+          <div className="border-l-2 border-muted border-dashed flex flex-col items-center justify-center h-[300px]"></div>
+          <div></div>
+        </div>
+      </div>
+      <div className="grid grid-cols-[1fr,150px,1fr] items-center text-center">
+        <div></div>
+        <div className="border-2 border-muted border-dashed flex flex-col items-center justify-center h-[150px]">
+          <Image
+            src="/images/shield.svg"
+            alt="Echo Icon"
+            width={40}
+            height={40}
+          />
+        </div>
+        {/* Empty Third Column */}
+        <div></div>
+      </div>
+      <div className="grid grid-cols-[1fr,1fr] items-center text-center">
+        <div className="border-r-2 border-muted border-dashed flex flex-col items-center justify-center h-[300px]"></div>
+        <div className="pl-12 text-2xl text-tertiary">
+          <p className="font-bold py-6">Currently available in</p>
+          <HeroSection />
+        </div>
+      </div>
+      <div className="grid grid-cols-[1fr,150px,1fr] items-center text-center">
+        <div></div>
+        <div className="border-2 border-muted border-dashed flex flex-col items-center justify-center h-[150px]">
+          <Image
+            src="/images/care.svg"
+            alt="Echo Icon"
+            width={40}
+            height={40}
+          />
+        </div>
+        {/* Empty Third Column */}
+        <div></div>
+      </div>
+
+      <CodeExamples />
+      <div className="text-center my-24 space-y-4">
+        <p className="text-tertiary text-2xl">Run here</p>
+        <p className="text-tertiary text-2xl">Run over there</p>
+        <p className="text-tertiary text-2xl">Sequential code</p>
+        <p className="text-tertiary text-2xl">
+          Concurrent, distributed, and durable executions
+        </p>
+      </div>
+      <div className="bg-dark px-12 py-12 w-full border-t-2 border-muted mt-24">
+        <Image
+          src="/images/lamp.svg"
+          alt="promise and function call graph"
+          width={40}
+          height={40}
+          className="mx-auto mb-4"
+        />
+        <p className="text-primary text-2xl text-center">
+          Resonate is dead simple, formally verified, and deterministically
+          tested — the way all software should be.
+        </p>
       </div>
     </div>
   );

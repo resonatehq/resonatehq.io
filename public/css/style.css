@@ -15,10 +15,10 @@
 }
 
 .call-graph {
-  background-color: #000000; /* Dark background */
+  background-color: #ffffff; /* Dark background */
   background-image: url("/images/call-graph-4-x.svg");
   background-position: center;
-  background-size: 2400px auto;
+  background-size: 2800px auto;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
