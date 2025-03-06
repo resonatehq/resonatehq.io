@@ -15,7 +15,7 @@
 }
 
 .call-graph {
-  background-color: #080a0e; /* Dark background */
+  background-color: #ffffff; /* #080a0e; /* Dark background */
   background-image: url("/images/call-graph-4-x.svg");
   background-position: center;
   background-size: 2800px auto;
