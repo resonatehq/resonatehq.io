@@ -76,7 +76,7 @@ const CodeExample = () => {
             </svg>
           </button>
 
-          <div className="w-full">
+          <div className="w-full text-sm md:text-md lg:text-lg">
             <SyntaxHighlighter
               language={selectedTab}
               style={tomorrow}
@@ -85,7 +85,6 @@ const CodeExample = () => {
                 background: "#080A0E",
                 padding: "0px",
                 borderRadius: 0,
-                overflow: "scroll",
               }}
             >
               {selectedTab === "python" ? invokeHerePY : invokeHereTS}
@@ -121,7 +120,7 @@ const CodeExample = () => {
             </svg>
           </button>
 
-          <div className="overflow-auto w-full">
+          <div className="w-full text-sm md:text-md lg:text-lg">
             <SyntaxHighlighter
               language={selectedTab}
               style={tomorrow}
