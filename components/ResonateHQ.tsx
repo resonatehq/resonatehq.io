@@ -228,10 +228,9 @@ const ResonateHQ: React.FC = () => {
         />
         <p className="text-tertiary text-2xl text-center">
           It is common to manage the complexity that Concurrency and
-          Distribution introducem at the application level, resulting in an
-          awful developer experience. Distributed Async Await pushes that
-          complexity to the platform level, offering a delightful developer
-          experience.
+          Distribution introduce at the application level, resulting in an awful
+          developer experience. Distributed Async Await pushes that complexity
+          to the platform level, offering a delightful developer experience.
         </p>
       </div>
       <div className="grid grid-cols-[1fr,150px,1fr] items-center text-center">
@@ -364,7 +363,7 @@ const ResonateHQ: React.FC = () => {
         <div className="py-8 flex justify-center items-center text-center">
           <button
             onClick={() => smoothScrollTo("start-with-resonate")}
-            className="font-mono mt-2 mx-4 px-4 py-2 flex items-center text-tertiary hover:text-secondary transition"
+            className="font-mono mt-2 mx-2 md:mx-4 px-2 md:px-4 py-2 flex items-center text-tertiary hover:text-secondary transition"
           >
             Learn more
             <svg
@@ -384,7 +383,7 @@ const ResonateHQ: React.FC = () => {
             onClick={() =>
               (window.location.href = "https://docs.resonatehq.io/get-started/")
             }
-            className="font-mono flex items-center mt-2 mx-4 px-4 py-2 text-tertiary hover:text-secondary transition"
+            className="font-mono flex items-center mt-2 mx-2 md:mx-4 px-2 md:px-4 py-2 text-tertiary hover:text-secondary transition"
           >
             Try it
             <svg
