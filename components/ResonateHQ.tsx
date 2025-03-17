@@ -69,7 +69,7 @@ const ResonateHQ: React.FC = () => {
         <div className="py-8 flex justify-center items-center">
           <button
             onClick={() => smoothScrollTo("start-with-distributed-async-await")}
-            className="font-mono mt-2 mx-4 px-4 py-2 flex items-center text-tertiary hover:text-secondary transition"
+            className="font-mono mt-2 mx-4 lg:px-4 py-2 flex items-center text-tertiary hover:text-secondary transition"
           >
             Learn more
             <svg
@@ -125,7 +125,7 @@ const ResonateHQ: React.FC = () => {
       </div>
       <div className="flex flex-col space-y-4 md:space-y-12 w-full px-12">
         <div className="grid grid-cols-[1fr,1fr] items-center text-center">
-          <div className="pr-12 md:pr-0 text-2xl text-tertiary max-w-[300px]">
+          <div className="pr-2 md:pr-6 lg:pr-12 text-sm md:text-lg lg:text-2xl text-tertiary max-w-[300px]">
             <p className="font-bold py-6">Concurrency</p>
             <Image
               src="/images/lines.svg"
@@ -155,7 +155,7 @@ const ResonateHQ: React.FC = () => {
       </div>
       <div className="grid grid-cols-[1fr,1fr] items-center text-center">
         <div className="border-r border-muted flex flex-col items-center justify-center h-[300px]"></div>
-        <div className="pl-12 text-2xl text-tertiary">
+        <div className="pl-2 md: pl-6 lg:pl-12 text-sm md:text-lg lg:text-2xl text-tertiary">
           <p className="font-bold py-6">Distribution</p>
           <Image
             src="/images/dots.svg"
