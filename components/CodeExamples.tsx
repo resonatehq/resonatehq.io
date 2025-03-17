@@ -55,7 +55,7 @@ const CodeExample = () => {
           Run <span className="font-mono text-dark font-bold">bar()</span> here
         </p>
 
-        <div className="relative bg-dark text-white p-4">
+        <div className="relative bg-dark text-white p-2 md:p-4">
           <button
             className="absolute top-4 right-4 px-2 py-2 text-white hover:text-secondary"
             onClick={() =>
@@ -76,7 +76,7 @@ const CodeExample = () => {
             </svg>
           </button>
 
-          <div className="w-full text-sm md:text-md lg:text-lg">
+          <div className="w-full text-xs sm:text-sm md:text-md lg:text-lg">
             <SyntaxHighlighter
               language={selectedTab}
               style={tomorrow}
@@ -99,7 +99,7 @@ const CodeExample = () => {
           there
         </p>
 
-        <div className="relative bg-dark text-white p-4">
+        <div className="relative bg-dark text-white p-2 md:p-4">
           <button
             className="absolute top-4 right-4 px-2 py-2 text-white hover:text-secondary"
             onClick={() =>
@@ -120,7 +120,7 @@ const CodeExample = () => {
             </svg>
           </button>
 
-          <div className="w-full text-sm md:text-md lg:text-lg">
+          <div className="w-full text-xs sm:text-sm md:text-md lg:text-lg">
             <SyntaxHighlighter
               language={selectedTab}
               style={tomorrow}
