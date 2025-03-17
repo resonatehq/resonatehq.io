@@ -9,7 +9,7 @@ const openSans = Open_Sans({
 
 const Footer: React.FC = () => {
   return (
-    <footer className="p-8 flex flex-col items-center w-full mx-auto bg-primary border-t-2 border-muted">
+    <footer className="p-8 flex flex-col items-center w-full mx-auto bg-primary border-t border-muted">
       {/* Links Section */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full max-w-4xl mb-12 text-center">
         <div className="mx-auto">

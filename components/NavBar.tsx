@@ -10,7 +10,7 @@ const NavBar: React.FC = () => {
   return (
     <div className="fixed w-full z-50">
       {/* Navbar */}
-      <nav className="bg-primary border-b-2 border-muted">
+      <nav className="bg-primary border-b border-muted">
         <div className="flex justify-between items-center px-6 lg:px-12 py-3">
           {/* Logo - Now inline with menu */}
           <a href="/" className="flex items-center">

@@ -24,15 +24,15 @@ const smoothScrollTo = (id: string) => {
 const ResonateHQ: React.FC = () => {
   return (
     <div
-      className={`${openSans.className} flex bg-white flex-col w-full max-w-[800px] min-w-[300px] items-center mx-auto border-l-2 border-r-2 border-muted`}
+      className={`${openSans.className} flex bg-white flex-col w-full max-w-[800px] min-w-[300px] items-center mx-auto border-l border-r border-muted`}
     >
-      <div className="bg-dark px-12 py-12 w-full border-b-2 border-muted mt-12">
-        <p className="text-2xl text-primary text-center">
+      <div className="bg-primary px-12 py-12 w-full border-b border-muted mt-12">
+        <p className="text-2xl text-tertiary text-center">
           &quot;The question is no longer whether an application is concurrent
           and distributed, but only to what extent an application is concurrent
           and distributed.&quot;
         </p>
-        <p className="text-primary text-2xl text-center italic font-bold mt-4">
+        <p className="text-tertiary text-2xl text-center italic font-bold mt-4">
           — Dominik Tornow
         </p>
       </div>
@@ -69,31 +69,41 @@ const ResonateHQ: React.FC = () => {
         <div className="py-8 flex justify-center items-center">
           <button
             onClick={() => smoothScrollTo("start-with-distributed-async-await")}
-            className="font-mono mt-2 mx-4 px-4 py-2 flex items-center text-primary hover:bg-secondary bg-dark transition"
+            className="font-mono mt-2 mx-4 px-4 py-2 flex items-center text-tertiary hover:text-secondary transition"
           >
             Learn more
-            <Image
-              src="/images/down-arrow-white.svg"
-              alt="down arrow"
-              width={20}
-              height={20}
+            <svg
+              height="20"
+              viewBox="0 0 64 64"
+              fill="currentColor"
+              width="20"
+              xmlns="http://www.w3.org/2000/svg"
               className="ml-2"
-            />
+            >
+              <g id="Glyph">
+                <path d="m50.71 39.29-4.24-4.24a1 1 0 0 0 -1.42 0l-9.05 9.05v-38.1a1 1 0 0 0 -1-1h-6a1 1 0 0 0 -1 1v38.1l-9-9.05a1 1 0 0 0 -1.42 0l-4.24 4.24a1 1 0 0 0 0 1.42l18 18a1 1 0 0 0 1.42 0l18-18a1 1 0 0 0 0-1.42z" />
+              </g>
+            </svg>
           </button>
           <button
             onClick={() =>
               (window.location.href = "https://resonatehq.io/discord")
             }
-            className="font-mono flex items-center mt-2 mx-4 px-4 py-2 text-white hover:bg-secondary bg-dark transition"
+            className="font-mono flex items-center mt-2 mx-4 px-4 py-2 text-tertiary hover:text-secondary transition"
           >
             Join us
-            <Image
-              src="/images/right-arrow-white.svg"
-              alt="down arrow"
-              width={20}
-              height={20}
+            <svg
+              height="20"
+              viewBox="0 0 64 64"
+              width="20"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
               className="ml-2"
-            />
+            >
+              <g id="Glyph">
+                <path d="m58.71 31.29-18-18a1 1 0 0 0 -1.42 0l-4.24 4.24a1 1 0 0 0 0 1.42l9.05 9.05h-38.1a1 1 0 0 0 -1 1v6a1 1 0 0 0 1 1h38.1l-9.05 9a1 1 0 0 0 0 1.42l4.24 4.24a1 1 0 0 0 1.42 0l18-18a1 1 0 0 0 0-1.37z" />
+              </g>
+            </svg>
           </button>
         </div>
       </div>
@@ -101,7 +111,7 @@ const ResonateHQ: React.FC = () => {
         <div></div>
         <div
           id="start-with-distributed-async-await"
-          className="border-2 border-tertiary flex flex-col items-center justify-center h-[150px] rounded-full"
+          className="border border-muted flex flex-col items-center justify-center h-[150px] rounded-full"
         >
           <Image
             src="/images/start.svg"
@@ -126,13 +136,13 @@ const ResonateHQ: React.FC = () => {
             />
             <p className="py-6">introduces Partial Order</p>
           </div>
-          <div className="border-l-2 border-tertiary flex flex-col items-center justify-center h-[300px]"></div>
+          <div className="border-l border-muted flex flex-col items-center justify-center h-[300px]"></div>
           <div></div>
         </div>
       </div>
       <div className="grid grid-cols-[1fr,150px,1fr] items-center text-center">
         <div></div>
-        <div className="border-2 border-tertiary  flex flex-col items-center justify-center h-[150px] rounded-full">
+        <div className="border border-muted  flex flex-col items-center justify-center h-[150px] rounded-full">
           <Image
             src="/images/swords.svg"
             alt="partial order"
@@ -144,7 +154,7 @@ const ResonateHQ: React.FC = () => {
         <div></div>
       </div>
       <div className="grid grid-cols-[1fr,1fr] items-center text-center">
-        <div className="border-r-2 border-tertiary flex flex-col items-center justify-center h-[300px]"></div>
+        <div className="border-r border-muted flex flex-col items-center justify-center h-[300px]"></div>
         <div className="pl-12 text-2xl text-tertiary">
           <p className="font-bold py-6">Distribution</p>
           <Image
@@ -159,7 +169,7 @@ const ResonateHQ: React.FC = () => {
       </div>
       <div className="grid grid-cols-[1fr,150px,1fr] items-center text-center">
         <div></div>
-        <div className="border-2 border-tertiary  flex flex-col items-center justify-center h-[150px] rounded-full">
+        <div className="border border-muted  flex flex-col items-center justify-center h-[150px] rounded-full">
           <Image
             src="/images/swords.svg"
             alt="partial failure"
@@ -208,7 +218,7 @@ const ResonateHQ: React.FC = () => {
           <p className="text-2xl py-6">for a delightful developer experience</p>
         </div>
       </div>
-      <div className="bg-dark px-12 py-12 mb-24 w-full border-b-2 border-t-2 border-muted">
+      <div className="bg-primary px-12 py-12 mb-24 w-full border-b border-t border-muted">
         <Image
           src="/images/lamp.svg"
           alt="promise and function call graph"
@@ -216,7 +226,7 @@ const ResonateHQ: React.FC = () => {
           height={40}
           className="mx-auto mb-4"
         />
-        <p className="text-primary text-2xl text-center">
+        <p className="text-tertiary text-2xl text-center">
           It is common to manage the complexity that Concurrency and
           Distribution introducem at the application level, resulting in an
           awful developer experience. Distributed Async Await pushes that
@@ -226,7 +236,7 @@ const ResonateHQ: React.FC = () => {
       </div>
       <div className="grid grid-cols-[1fr,150px,1fr] items-center text-center">
         <div></div>
-        <div className="border-2 border-tertiary flex flex-col items-center justify-center h-[150px] rounded-full">
+        <div className="border border-muted flex flex-col items-center justify-center h-[150px] rounded-full">
           <Image src="/images/pin.svg" alt="pin" width={40} height={40} />
         </div>
         {/* Empty Third Column */}
@@ -239,13 +249,13 @@ const ResonateHQ: React.FC = () => {
             <p className="font-bold pb-6">Async Await</p>
             <p className="py-6">extends the Async Await programming model...</p>
           </div>
-          <div className="border-l-2 border-tertiary flex flex-col items-center justify-center h-[300px]"></div>
+          <div className="border-l border-muted flex flex-col items-center justify-center h-[300px]"></div>
           <div></div>
         </div>
       </div>
       <div className="grid grid-cols-[1fr,150px,1fr] items-center text-center">
         <div></div>
-        <div className="border-2 border-tertiary flex flex-col items-center justify-center h-[150px] rounded-full">
+        <div className="border border-muted flex flex-col items-center justify-center h-[150px] rounded-full">
           <Image
             src="/images/arrows.svg"
             alt="Echo Icon"
@@ -257,7 +267,7 @@ const ResonateHQ: React.FC = () => {
         <div></div>
       </div>
       <div className="grid grid-cols-[1fr,1fr] items-center text-center">
-        <div className="border-r-2 border-tertiary flex flex-col items-center justify-center h-[300px]"></div>
+        <div className="border-r border-muted flex flex-col items-center justify-center h-[300px]"></div>
         <div className="pl-12 text-2xl text-tertiary">
           <p>...so Concurrency,</p>
           <p className="font-bold py-6">and Distribution,</p>
@@ -266,7 +276,7 @@ const ResonateHQ: React.FC = () => {
       </div>
       <div className="grid grid-cols-[1fr,150px,1fr] items-center text-center">
         <div></div>
-        <div className="border-2 border-tertiary flex flex-col items-center justify-center h-[150px] rounded-full">
+        <div className="border border-muted flex flex-col items-center justify-center h-[150px] rounded-full">
           <Image
             src="/images/diamond.svg"
             alt="promises and functions"
@@ -298,7 +308,7 @@ const ResonateHQ: React.FC = () => {
           <p className="text-2xl py-6">without any proprietary primitives</p>
         </div>
       </div>
-      <div className="bg-dark px-12 py-12 w-full border-b-2 border-t-2 border-muted">
+      <div className="bg-primary px-12 py-12 w-full border-b border-t border-muted">
         <Image
           src="/images/lamp.svg"
           alt="promise and function call graph"
@@ -306,7 +316,7 @@ const ResonateHQ: React.FC = () => {
           height={40}
           className="mx-auto mb-4"
         />
-        <p className="text-primary text-2xl text-center">
+        <p className="text-tertiary text-2xl text-center">
           Async Await pushes Concurrency to the platform level, but does nothing
           to address Distribution. Unlike Async Await, Distributed Async Await
           addresses both Concurrency and Distribution at the platform level.
@@ -351,34 +361,44 @@ const ResonateHQ: React.FC = () => {
           </p>
         </div>
 
-        <div className="py-8 flex justify-center items-center">
+        <div className="py-8 flex justify-center items-center text-center">
           <button
             onClick={() => smoothScrollTo("start-with-resonate")}
-            className="font-mono mt-2 mx-4 px-4 py-2 flex items-center text-primary hover:bg-secondary bg-dark transition"
+            className="font-mono mt-2 mx-4 px-4 py-2 flex items-center text-tertiary hover:text-secondary transition"
           >
             Learn more
-            <Image
-              src="/images/down-arrow-white.svg"
-              alt="down arrow"
-              width={20}
-              height={20}
+            <svg
+              height="20"
+              viewBox="0 0 64 64"
+              fill="currentColor"
+              width="20"
+              xmlns="http://www.w3.org/2000/svg"
               className="ml-2"
-            />
+            >
+              <g id="Glyph">
+                <path d="m50.71 39.29-4.24-4.24a1 1 0 0 0 -1.42 0l-9.05 9.05v-38.1a1 1 0 0 0 -1-1h-6a1 1 0 0 0 -1 1v38.1l-9-9.05a1 1 0 0 0 -1.42 0l-4.24 4.24a1 1 0 0 0 0 1.42l18 18a1 1 0 0 0 1.42 0l18-18a1 1 0 0 0 0-1.42z" />
+              </g>
+            </svg>
           </button>
           <button
             onClick={() =>
               (window.location.href = "https://docs.resonatehq.io/get-started/")
             }
-            className="font-mono flex items-center mt-2 mx-4 px-4 py-2 text-primary hover:bg-secondary bg-dark transition"
+            className="font-mono flex items-center mt-2 mx-4 px-4 py-2 text-tertiary hover:text-secondary transition"
           >
             Try it
-            <Image
-              src="/images/right-arrow-white.svg"
-              alt="down arrow"
-              width={20}
-              height={20}
+            <svg
+              height="20"
+              viewBox="0 0 64 64"
+              width="20"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
               className="ml-2"
-            />
+            >
+              <g id="Glyph">
+                <path d="m58.71 31.29-18-18a1 1 0 0 0 -1.42 0l-4.24 4.24a1 1 0 0 0 0 1.42l9.05 9.05h-38.1a1 1 0 0 0 -1 1v6a1 1 0 0 0 1 1h38.1l-9.05 9a1 1 0 0 0 0 1.42l4.24 4.24a1 1 0 0 0 1.42 0l18-18a1 1 0 0 0 0-1.37z" />
+              </g>
+            </svg>
           </button>
         </div>
       </div>
@@ -387,7 +407,7 @@ const ResonateHQ: React.FC = () => {
         className="grid grid-cols-[1fr,150px,1fr] items-center text-center"
       >
         <div></div>
-        <div className="border-2 border-muted border-dashed flex flex-col items-center justify-center h-[150px]">
+        <div className="border border-muted border-dashed flex flex-col items-center justify-center h-[150px]">
           <Image
             src="/images/dependability.svg"
             alt="Echo Icon"
@@ -405,13 +425,13 @@ const ResonateHQ: React.FC = () => {
             <p className="font-bold py-6">reliability and scalability</p>
             <p className="py-2">to the language you love</p>
           </div>
-          <div className="border-l-2 border-muted border-dashed flex flex-col items-center justify-center h-[300px]"></div>
+          <div className="border-l border-muted border-dashed flex flex-col items-center justify-center h-[300px]"></div>
           <div></div>
         </div>
       </div>
       <div className="grid grid-cols-[1fr,150px,1fr] items-center text-center">
         <div></div>
-        <div className="border-2 border-muted border-dashed flex flex-col items-center justify-center h-[150px]">
+        <div className="border border-muted border-dashed flex flex-col items-center justify-center h-[150px]">
           <Image
             src="/images/shield.svg"
             alt="Echo Icon"
@@ -423,7 +443,7 @@ const ResonateHQ: React.FC = () => {
         <div></div>
       </div>
       <div className="grid grid-cols-[1fr,1fr] items-center text-center">
-        <div className="border-r-2 border-muted border-dashed flex flex-col items-center justify-center h-[300px]"></div>
+        <div className="border-r border-muted border-dashed flex flex-col items-center justify-center h-[300px]"></div>
         <div className="pl-12 text-2xl text-tertiary">
           <p className="font-bold py-6">Currently available in</p>
           <HeroSection />
@@ -431,7 +451,7 @@ const ResonateHQ: React.FC = () => {
       </div>
       <div className="grid grid-cols-[1fr,150px,1fr] items-center text-center">
         <div></div>
-        <div className="border-2 border-muted border-dashed flex flex-col items-center justify-center h-[150px]">
+        <div className="border border-muted border-dashed flex flex-col items-center justify-center h-[150px]">
           <Image
             src="/images/care.svg"
             alt="Echo Icon"
@@ -452,7 +472,7 @@ const ResonateHQ: React.FC = () => {
           Concurrent, distributed, and durable executions
         </p>
       </div>
-      <div className="bg-dark px-12 py-12 w-full border-t-2 border-muted mt-24">
+      <div className="bg-primary px-12 py-12 w-full border-t border-muted mt-24">
         <Image
           src="/images/lamp.svg"
           alt="promise and function call graph"
@@ -460,7 +480,7 @@ const ResonateHQ: React.FC = () => {
           height={40}
           className="mx-auto mb-4"
         />
-        <p className="text-primary text-2xl text-center">
+        <p className="text-tertiary text-2xl text-center">
           Resonate is dead simple, formally verified, and deterministically
           tested — the way all software should be.
         </p>
