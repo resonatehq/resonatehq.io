@@ -12,7 +12,9 @@ def foo(ctx):
 
 const invokeTherePY = `@resonate.register
 def foo(ctx):
-    promise = yield ctx.rfi("bar").options(send_to=poll("service-bar"))
+    promise = yield ctx.rfi("bar").options(
+        send_to=poll("service-bar")
+    )
     result = yield promise
     return result
 `;
@@ -37,9 +39,9 @@ const CodeExample = () => {
         {["python", "typescript"].map((tab) => (
           <button
             key={tab}
-            className={`px-4 py-2 bg-dark ${
-              selectedTab === tab ? "bg-secondary" : "bg-dark"
-            } font-mono text-primary hover:bg-secondary`}
+            className={`px-4 py-2 ${
+              selectedTab === tab ? "text-secondary" : "text-tertiary"
+            } font-mono text-tertiart hover:text-secondary`}
             onClick={() => setSelectedTab(tab)}
           >
             {tab.charAt(0).toUpperCase() + tab.slice(1)}
@@ -74,7 +76,7 @@ const CodeExample = () => {
             </svg>
           </button>
 
-          <div className="overflow-auto w-full">
+          <div className="w-full">
             <SyntaxHighlighter
               language={selectedTab}
               style={tomorrow}
@@ -83,6 +85,7 @@ const CodeExample = () => {
                 background: "#080A0E",
                 padding: "0px",
                 borderRadius: 0,
+                overflow: "scroll",
               }}
             >
               {selectedTab === "python" ? invokeHerePY : invokeHereTS}
