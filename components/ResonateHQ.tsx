@@ -244,7 +244,7 @@ const ResonateHQ: React.FC = () => {
       </div>
       <div className="flex flex-col space-y-4 md:space-y-12 w-full px-12">
         <div className="grid grid-cols-[1fr,1fr] items-center text-center">
-          <div className="pr-12 text-2xl text-tertiary">
+          <div className="pr-2 md:pr-6 lg:pr-12 text-sm md:text-lg lg:text-2xl text-tertiary">
             <p className="font-bold pt-6">Distributed</p>
             <p className="font-bold pb-6">Async Await</p>
             <p className="py-6">extends the Async Await programming model...</p>
@@ -268,7 +268,7 @@ const ResonateHQ: React.FC = () => {
       </div>
       <div className="grid grid-cols-[1fr,1fr] items-center text-center">
         <div className="border-r border-muted flex flex-col items-center justify-center h-[300px]"></div>
-        <div className="pl-12 text-2xl text-tertiary">
+        <div className="pl-2 md: pl-6 lg:pl-12 text-sm md:text-lg lg:text-2xl text-tertiary">
           <p>...so Concurrency,</p>
           <p className="font-bold py-6">and Distribution,</p>
           <p>become first class citizens</p>
@@ -420,7 +420,7 @@ const ResonateHQ: React.FC = () => {
       </div>
       <div className="flex flex-col space-y-4 md:space-y-12 w-full px-12">
         <div className="grid grid-cols-[1fr,1fr] items-center text-center">
-          <div className="pr-12 md:pr-0 text-2xl text-tertiary max-w-[300px]">
+          <div className="pr-2 md:pr-6 lg:pr-12 text-sm md:text-lg lg:text-2xl text-tertiary max-w-[300px]">
             <p className="py-2">Bringing</p>
             <p className="font-bold py-6">reliability and scalability</p>
             <p className="py-2">to the language you love</p>
@@ -444,7 +444,7 @@ const ResonateHQ: React.FC = () => {
       </div>
       <div className="grid grid-cols-[1fr,1fr] items-center text-center">
         <div className="border-r border-muted border-dashed flex flex-col items-center justify-center h-[300px]"></div>
-        <div className="pl-12 text-2xl text-tertiary">
+        <div className="pl-2 md: pl-6 lg:pl-12 text-sm md:text-lg lg:text-2xl text-tertiary">
           <p className="font-bold py-6">Currently available in</p>
           <HeroSection />
         </div>

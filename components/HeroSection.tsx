@@ -30,7 +30,7 @@ const HeroSection: React.FC = () => {
     <div className="relative overflow-hidden pt-6 pb-6">
       <div className="text-center">
         <div className="relative inline-block">
-          <h1 className="text-4xl tracking-tight text-tertiary">
+          <h1 className="text-md md:text-2xl lg:text-4xl tracking-tight text-tertiary">
             <span
               className={`transition-opacity duration-1000 ${
                 isFading ? "opacity-0" : "opacity-100"
