@@ -13,9 +13,8 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Resonate",
-  description:
-    "Holistic programming model for durable, scalable, and distributed cloud application development.",
+  title: "Resonate HQ",
+  description: "Dead simple — Killing the complexity of distributed systems.",
 };
 
 export default function RootLayout({

@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
         <div className="mx-auto">
           <a
             href="https://journal.resonatehq.io"
-            className="text-tertiary border-b border-transparent cursor-pointer hover:text-secondary flex items-center gap-x-2"
+            className="text-tertiary border-b border-transparent cursor-pointer hover:text-muted flex items-center gap-x-2"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
         <div className="mx-auto">
           <a
             href="https://docs.resonatehq.io"
-            className="text-tertiary border-b border-transparent cursor-pointer hover:text-secondary flex items-center gap-x-2"
+            className="text-tertiary border-b border-transparent cursor-pointer hover:text-muted flex items-center gap-x-2"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -35,20 +35,20 @@ const Footer: React.FC = () => {
         <div className="mx-auto">
           <a
             href="/rsvp"
-            className="text-tertiary border-b border-transparent cursor-pointer hover:text-secondary flex items-center gap-x-2"
+            className="text-tertiary border-b border-transparent cursor-pointer hover:text-muted flex items-center gap-x-2"
           >
             <i className="bx bx-sm bx-calendar-event"></i> rsvp
           </a>
         </div>
         <div className="mx-auto">
-          <button className="text-tertiary border-b border-transparent cursor-pointer hover:text-secondary flex items-center gap-x-2 ask-echo">
+          <button className="text-tertiary border-b border-transparent cursor-pointer hover:text-muted flex items-center gap-x-2 ask-echo">
             <i className="bx bx-sm bx-chat"></i> echo
           </button>
         </div>
         <div className="mx-auto">
           <a
             href="https://resonatehq.io/discord"
-            className="text-tertiary border-b border-transparent cursor-pointer hover:text-secondary flex items-center gap-x-2"
+            className="text-tertiary border-b border-transparent cursor-pointer hover:text-muted flex items-center gap-x-2"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -58,7 +58,7 @@ const Footer: React.FC = () => {
         <div className="mx-auto">
           <a
             href="https://github.com/resonatehq"
-            className="text-tertiary border-b border-transparent cursor-pointer hover:text-secondary flex items-center gap-x-2"
+            className="text-tertiary border-b border-transparent cursor-pointer hover:text-muted flex items-center gap-x-2"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -68,7 +68,7 @@ const Footer: React.FC = () => {
         <div className="mx-auto">
           <a
             href="https://www.linkedin.com/company/resonatehqio"
-            className="text-tertiary border-b border-transparent cursor-pointer hover:text-secondary flex items-center gap-x-2"
+            className="text-tertiary border-b border-transparent cursor-pointer hover:text-muted flex items-center gap-x-2"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -78,7 +78,7 @@ const Footer: React.FC = () => {
         <div className="mx-auto">
           <a
             href="https://twitter.com/resonatehqio"
-            className="text-tertiary border-b border-transparent cursor-pointer hover:text-secondary flex items-center gap-x-2"
+            className="text-tertiary border-b border-transparent cursor-pointer hover:text-muted flex items-center gap-x-2"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -88,7 +88,7 @@ const Footer: React.FC = () => {
         <div className="mx-auto">
           <a
             href="https://www.youtube.com/@resonatehqio"
-            className="text-tertiary border-b border-transparent cursor-pointer hover:text-secondary flex items-center gap-x-2"
+            className="text-tertiary border-b border-transparent cursor-pointer hover:text-muted flex items-center gap-x-2"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -98,7 +98,7 @@ const Footer: React.FC = () => {
         <div className="mx-auto">
           <a
             href="/privacy-policy"
-            className="text-tertiary border-b border-transparent cursor-pointer hover:text-secondary flex items-center gap-x-2"
+            className="text-tertiary border-b border-transparent cursor-pointer hover:text-muted flex items-center gap-x-2"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -108,7 +108,7 @@ const Footer: React.FC = () => {
         <div className="mx-auto">
           <a
             href="/terms-and-conditions"
-            className="text-tertiary border-b border-transparent cursor-pointer hover:text-secondary flex items-center gap-x-2"
+            className="text-tertiary border-b border-transparent cursor-pointer hover:text-muted flex items-center gap-x-2"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -118,7 +118,7 @@ const Footer: React.FC = () => {
       </div>
 
       {/* Copyright Section */}
-      <p className={`text-md text-center ${openSans.className}`}>
+      <p className={`text-md text-tertiary text-center font-mono`}>
         Copyright &copy; {new Date().getFullYear()} Resonate HQ, Inc.
       </p>
     </footer>
