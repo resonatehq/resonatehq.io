@@ -54,7 +54,7 @@ const config: Config = {
         primary: "#FFFFFF",
         secondary: "#88A7F6",
         tertiary: "#353F58",
-        accent: "#63E6BE",
+        accent: "#3CC9A7",
         muted: "#b0b8c3",
         dark: "#080A0E",
       },
