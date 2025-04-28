@@ -22,3 +22,287 @@
   background-repeat: repeat;
   background-attachment: fixed;
 }
+
+@keyframes pulse-stroke-1 {
+  0% {
+    stroke: #ffffff;
+  }
+  10% {
+    stroke: #63e6be;
+  }
+  20% {
+    stroke: #3cc9a7;
+  }
+  30% {
+    stroke: #63e6be;
+  }
+  40% {
+    stroke: #ffffff;
+  }
+  50% {
+    stroke: #ffffff;
+  }
+  60% {
+    stroke: #ffffff;
+  }
+  70% {
+    stroke: #ffffff;
+  }
+  80% {
+    stroke: #ffffff;
+  }
+  90% {
+    stroke: #ffffff;
+  }
+  100% {
+    stroke: #ffffff;
+  }
+}
+
+@keyframes pulse-stroke-2 {
+  0% {
+    stroke: #ffffff;
+  }
+  10% {
+    stroke: #ffffff;
+  }
+  20% {
+    stroke: #ffffff;
+  }
+  30% {
+    stroke: #63e6be;
+  }
+  40% {
+    stroke: #3cc9a7;
+  }
+  50% {
+    stroke: #63e6be;
+  }
+  60% {
+    stroke: #ffffff;
+  }
+  70% {
+    stroke: #ffffff;
+  }
+  80% {
+    stroke: #ffffff;
+  }
+  90% {
+    stroke: #ffffff;
+  }
+  100% {
+    stroke: #ffffff;
+  }
+}
+
+@keyframes pulse-stroke-3 {
+  0% {
+    stroke: #ffffff;
+  }
+  10% {
+    stroke: #ffffff;
+  }
+  20% {
+    stroke: #ffffff;
+  }
+  30% {
+    stroke: #ffffff;
+  }
+  40% {
+    stroke: #ffffff;
+  }
+  50% {
+    stroke: #63e6be;
+  }
+  60% {
+    stroke: #3cc9a7;
+  }
+  70% {
+    stroke: #63e6be;
+  }
+  80% {
+    stroke: #ffffff;
+  }
+  90% {
+    stroke: #ffffff;
+  }
+  100% {
+    stroke: #ffffff;
+  }
+}
+
+@keyframes pulse-stroke-4 {
+  0% {
+    stroke: #ffffff;
+  }
+  10% {
+    stroke: #ffffff;
+  }
+  20% {
+    stroke: #ffffff;
+  }
+  30% {
+    stroke: #ffffff;
+  }
+  40% {
+    stroke: #ffffff;
+  }
+  50% {
+    stroke: #ffffff;
+  }
+  60% {
+    stroke: #ffffff;
+  }
+  70% {
+    stroke: #63e6be;
+  }
+  80% {
+    stroke: #3cc9a7;
+  }
+  90% {
+    stroke: #63e6be;
+  }
+  100% {
+    stroke: #ffffff;
+  }
+}
+
+@keyframes pulse-stroke-5 {
+  0% {
+    stroke: #63e6be;
+  }
+  25% {
+    stroke: #3cc9a7;
+  }
+  50% {
+    stroke: #63e6be;
+  }
+  75% {
+    stroke: #ffffff;
+  }
+  100% {
+    stroke: #ffffff;
+  }
+}
+
+@keyframes pulse-stroke-6 {
+  0% {
+    stroke: #ffffff;
+  }
+  25% {
+    stroke: #ffffff;
+  }
+  50% {
+    stroke: #63e6be;
+  }
+  75% {
+    stroke: #3cc9a7;
+  }
+  100% {
+    stroke: #63e6be;
+  }
+}
+
+.pulse-1 {
+  animation: pulse-stroke-1 4s ease-in-out infinite;
+}
+
+.pulse-2 {
+  animation: pulse-stroke-2 4s ease-in-out infinite;
+}
+
+.pulse-3 {
+  animation: pulse-stroke-3 4s ease-in-out infinite;
+}
+
+.pulse-4 {
+  animation: pulse-stroke-4 4s ease-in-out infinite;
+}
+
+.pulse-5 {
+  animation: pulse-stroke-5 4s ease-in-out infinite;
+}
+
+.pulse-6 {
+  animation: pulse-stroke-6 4s ease-in-out infinite;
+}
+
+@keyframes echo-fill-fade {
+  0% {
+    fill: #353f58; /* your blue accent */
+  }
+  10% {
+    fill: #88a7f6;
+  }
+  20% {
+    fill: white; /* your blue accent */
+  }
+  30% {
+    fill: #353f58;
+  }
+  40% {
+    fill: white; /* your blue accent */
+  }
+  50% {
+    fill: #88a7f6;
+  }
+  60% {
+    fill: #353f58; /* your blue accent */
+  }
+  70% {
+    fill: #88a7f6;
+  }
+  80% {
+    fill: white; /* your blue accent */
+  }
+  90% {
+    fill: #88a7f6;
+  }
+  100% {
+    fill: #353f58; /* your blue accent */
+  }
+}
+
+.echo-fill-fade {
+  animation: echo-fill-fade 60s ease-in-out infinite;
+}
+
+@keyframes echo-stroke-fade {
+  0% {
+    stroke: #353f58; /* your blue accent */
+  }
+  10% {
+    stroke: #88a7f6;
+  }
+  20% {
+    stroke: white; /* your blue accent */
+  }
+  30% {
+    stroke: #353f58;
+  }
+  40% {
+    stroke: white; /* your blue accent */
+  }
+  50% {
+    stroke: #88a7f6;
+  }
+  60% {
+    stroke: #353f58; /* your blue accent */
+  }
+  70% {
+    stroke: #88a7f6;
+  }
+  80% {
+    stroke: white; /* your blue accent */
+  }
+  90% {
+    stroke: #88a7f6;
+  }
+  100% {
+    stroke: #353f58; /* your blue accent */
+  }
+}
+
+.echo-stroke-fade {
+  animation: echo-stroke-fade 60s ease-in-out infinite;
+}
