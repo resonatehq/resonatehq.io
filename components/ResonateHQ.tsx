@@ -25,11 +25,11 @@ const ResonateHQ: React.FC = () => {
           </p>
         </div>
         <div className="flex flex-col justify-center items-center my-24">
-          <div className="my-24 w-120 h-120 flex items-center justify-center bg-primary text-tertiary">
+          <div className="my-24 w-220 h-220 flex items-center justify-center bg-primary text-tertiary">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="{120}"
-              height="{120}"
+              width={220}
+              height={220}
               viewBox="0 0 805 565"
             >
               <g stroke="currentColor">
