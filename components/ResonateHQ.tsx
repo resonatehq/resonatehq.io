@@ -15,8 +15,8 @@ const ResonateHQ: React.FC = () => {
       className={`${openSans.className} flex min-h-screen bg-white flex-col w-full max-w-[1200px] min-w-[300px] items-center mx-auto border-l border-r border-muted`}
     >
       <div className="bg-primary px-12 w-full">
-        <div className="mt-48 mb-24 flex flex-col justify-center items-center mt-48 mb-24">
-          <h1 className="text-2xl md:text-4xl lg:text-6xl py-12 text-tertiary">
+        <div className="mt-48 mb-24 flex flex-col justify-center text-center items-center mt-48 mb-24">
+          <h1 className="text-3xl md:text-4xl lg:text-6xl py-12 text-tertiary">
             Distributed System Software
           </h1>
           <p className="text-2xl">
@@ -298,9 +298,9 @@ const ResonateHQ: React.FC = () => {
             — Dominik Tornow
           </p>
         </div>
-        <div className="flex flex-col justify-center items-center my-24">
-          <h2 className="mt-12 text-2xl md:text-4xl lg:text-6xl py-12 text-tertiary">
-            Complexity is dead.
+        <div className="flex flex-col justify-center items-center text-center my-24">
+          <h2 className="mt-12 text-3xl md:text-4xl lg:text-6xl py-12 text-tertiary">
+            Complexity is dead
           </h2>
           <p className="text-2xl">
             Dead Simple to use, Dead Simple to understand, Dead Simple to
@@ -368,21 +368,21 @@ const ResonateHQ: React.FC = () => {
             </svg>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center my-24">
-          <p className="text-tertiary text-2xl text-center italic">
+        <div className="flex flex-col justify-center text-center items-center my-24">
+          <p className="text-tertiary text-2xl italic">
             &quot;Perfection is achieved, not when there is nothing more to add,
           </p>
-          <p className="text-tertiary text-2xl text-center italic">
+          <p className="text-tertiary text-2xl italic">
             but when there is nothing left to take away.&quot;
           </p>
-          <p className="text-tertiary text-2xl text-center font-bold mt-6">
+          <p className="text-tertiary text-2xl font-bold mt-6">
             — Antoine de Saint-Exupéry
           </p>
         </div>
-        <div className="flex flex-col justify-center items-center my-24">
-          <h1 className="mt-12 text-2xl md:text-4xl lg:text-6xl py-12 text-tertiary">
+        <div className="flex flex-col justify-center text-center items-center my-24">
+          <h2 className="mt-12 text-3xl md:text-4xl lg:text-6xl py-12 text-tertiary">
             Our Products
-          </h1>
+          </h2>
           <p className="text-2xl">Resonate HQ proudly presents</p>
         </div>
         <div className="flex flex-col justify-center items-center my-48">
