@@ -52,19 +52,19 @@ const Resonate: React.FC = () => {
             onClick={() => smoothScrollTo("start-with-resonate")}
             className="font-mono mt-2 mx-2 md:mx-4 px-2 md:px-4 py-2 flex items-center text-tertiary hover:text-muted transition"
           >
-            Learn more
             <svg
               height="20"
               viewBox="0 0 64 64"
               fill="currentColor"
               width="20"
               xmlns="http://www.w3.org/2000/svg"
-              className="ml-2"
+              className="mr-2"
             >
               <g id="Glyph">
                 <path d="m50.71 39.29-4.24-4.24a1 1 0 0 0 -1.42 0l-9.05 9.05v-38.1a1 1 0 0 0 -1-1h-6a1 1 0 0 0 -1 1v38.1l-9-9.05a1 1 0 0 0 -1.42 0l-4.24 4.24a1 1 0 0 0 0 1.42l18 18a1 1 0 0 0 1.42 0l18-18a1 1 0 0 0 0-1.42z" />
               </g>
             </svg>
+            Learn more
           </button>
           <button
             onClick={() =>

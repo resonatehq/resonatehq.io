@@ -47,27 +47,27 @@ const DistributedAsyncAwait: React.FC = () => {
             onClick={() => smoothScrollTo("start-with-distributed-async-await")}
             className="font-mono mt-2 mx-4 lg:px-4 py-2 flex items-center text-tertiary hover:text-muted transition"
           >
-            Learn more
             <svg
               height="20"
               viewBox="0 0 64 64"
               fill="currentColor"
               width="20"
               xmlns="http://www.w3.org/2000/svg"
-              className="ml-2"
+              className="mr-2"
             >
               <g id="Glyph">
                 <path d="m50.71 39.29-4.24-4.24a1 1 0 0 0 -1.42 0l-9.05 9.05v-38.1a1 1 0 0 0 -1-1h-6a1 1 0 0 0 -1 1v38.1l-9-9.05a1 1 0 0 0 -1.42 0l-4.24 4.24a1 1 0 0 0 0 1.42l18 18a1 1 0 0 0 1.42 0l18-18a1 1 0 0 0 0-1.42z" />
               </g>
             </svg>
+            Learn more
           </button>
           <button
             onClick={() =>
-              (window.location.href = "https://resonatehq.io/discord")
+              (window.location.href = "https://www.distributed-async-await.io")
             }
             className="font-mono flex items-center mt-2 mx-4 px-4 py-2 text-tertiary hover:text-muted transition"
           >
-            Join us
+            Read the spec
             <svg
               height="20"
               viewBox="0 0 64 64"
@@ -534,21 +534,47 @@ const DistributedAsyncAwait: React.FC = () => {
             Async Await, like Async Await, uses just promises and functions.
           </p>
         </div>
+        <div className="py-8 flex justify-center items-center">
+          <button
+            onClick={() => (window.location.href = "/resonate")}
+            className="font-mono mt-2 mx-4 lg:px-4 py-2 flex items-center text-tertiary hover:text-muted transition"
+          >
+            <svg
+              height="20"
+              viewBox="0 0 64 64"
+              width="20"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+              className="mr-2"
+            >
+              <g id="Glyph">
+                <path d="m58 28h-38.1l9.1-9a1 1 0 0 0 0-1.42l-4.24-4.24a1 1 0 0 0 -1.42 0l-18 18a1 1 0 0 0 0 1.42l18 18a1 1 0 0 0 1.42 0l4.24-4.29a1 1 0 0 0 0-1.42l-9-9h38a1 1 0 0 0 1-1v-6.05a1 1 0 0 0 -1-1z" />
+              </g>
+            </svg>
+            See an implementation
+          </button>
+          <button
+            onClick={() =>
+              (window.location.href = "https://www.distributed-async-await.io")
+            }
+            className="font-mono flex items-center mt-2 mx-4 px-4 py-2 text-tertiary hover:text-muted transition"
+          >
+            Read the spec
+            <svg
+              height="20"
+              viewBox="0 0 64 64"
+              width="20"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+              className="ml-2"
+            >
+              <g id="Glyph">
+                <path d="m58.71 31.29-18-18a1 1 0 0 0 -1.42 0l-4.24 4.24a1 1 0 0 0 0 1.42l9.05 9.05h-38.1a1 1 0 0 0 -1 1v6a1 1 0 0 0 1 1h38.1l-9.05 9a1 1 0 0 0 0 1.42l4.24 4.24a1 1 0 0 0 1.42 0l18-18a1 1 0 0 0 0-1.37z" />
+              </g>
+            </svg>
+          </button>
+        </div>
       </div>
-
-      {/* <div className="bg-tertiary px-12 py-12 w-full">
-        <p className="text-xl text-tertiary text-center italic mt-12">
-            &quot;The question is no longer whether an application is concurrent
-            and distributed,
-          </p>
-          <p className="text-xl text-tertiary italic text-center">
-            but only to what extent an application is concurrent and
-            distributed.&quot;
-          </p>
-          <p className="text-tertiary text-2xl text-center font-bold mt-4 mb-12">
-            — Dominik Tornow
-          </p>
-      </div> */}
     </div>
   );
 };
