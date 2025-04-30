@@ -496,7 +496,7 @@ const DistributedAsyncAwait: React.FC = () => {
           <p className="text-2xl py-6">without any proprietary primitives</p>
         </div>
       </div>
-      <div className="bg-primary text-tertiary px-12  w-full mb-24 w-full">
+      <div className="bg-primary text-tertiary px-12  w-full mb-48 w-full">
         <div className="border-l-8 border-r-8 border-accent py-12 flex flex-col items-center text-center">
           <p className="text-2xl text-center px-2 md:px-6">
             Async Await pushes Concurrency to the platform level, but does
@@ -534,46 +534,46 @@ const DistributedAsyncAwait: React.FC = () => {
             Async Await, like Async Await, uses just promises and functions.
           </p>
         </div>
-        <div className="py-8 flex justify-center items-center">
-          <button
-            onClick={() => (window.location.href = "/resonate")}
-            className="font-mono mt-2 mx-4 lg:px-4 py-2 flex items-center text-tertiary hover:text-muted transition"
+      </div>
+      <div className="py-8 flex justify-center items-center mb-48">
+        <button
+          onClick={() => (window.location.href = "/resonate")}
+          className="font-mono mt-2 mx-4 lg:px-4 py-2 flex items-center text-tertiary hover:text-muted transition"
+        >
+          <svg
+            height="20"
+            viewBox="0 0 64 64"
+            width="20"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+            className="mr-2"
           >
-            <svg
-              height="20"
-              viewBox="0 0 64 64"
-              width="20"
-              fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
-              className="mr-2"
-            >
-              <g id="Glyph">
-                <path d="m58 28h-38.1l9.1-9a1 1 0 0 0 0-1.42l-4.24-4.24a1 1 0 0 0 -1.42 0l-18 18a1 1 0 0 0 0 1.42l18 18a1 1 0 0 0 1.42 0l4.24-4.29a1 1 0 0 0 0-1.42l-9-9h38a1 1 0 0 0 1-1v-6.05a1 1 0 0 0 -1-1z" />
-              </g>
-            </svg>
-            See an implementation
-          </button>
-          <button
-            onClick={() =>
-              (window.location.href = "https://www.distributed-async-await.io")
-            }
-            className="font-mono flex items-center mt-2 mx-4 px-4 py-2 text-tertiary hover:text-muted transition"
+            <g id="Glyph">
+              <path d="m58 28h-38.1l9.1-9a1 1 0 0 0 0-1.42l-4.24-4.24a1 1 0 0 0 -1.42 0l-18 18a1 1 0 0 0 0 1.42l18 18a1 1 0 0 0 1.42 0l4.24-4.29a1 1 0 0 0 0-1.42l-9-9h38a1 1 0 0 0 1-1v-6.05a1 1 0 0 0 -1-1z" />
+            </g>
+          </svg>
+          See an implementation
+        </button>
+        <button
+          onClick={() =>
+            (window.location.href = "https://www.distributed-async-await.io")
+          }
+          className="font-mono flex items-center mt-2 mx-4 px-4 py-2 text-tertiary hover:text-muted transition"
+        >
+          Read the spec
+          <svg
+            height="20"
+            viewBox="0 0 64 64"
+            width="20"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+            className="ml-2"
           >
-            Read the spec
-            <svg
-              height="20"
-              viewBox="0 0 64 64"
-              width="20"
-              fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
-              className="ml-2"
-            >
-              <g id="Glyph">
-                <path d="m58.71 31.29-18-18a1 1 0 0 0 -1.42 0l-4.24 4.24a1 1 0 0 0 0 1.42l9.05 9.05h-38.1a1 1 0 0 0 -1 1v6a1 1 0 0 0 1 1h38.1l-9.05 9a1 1 0 0 0 0 1.42l4.24 4.24a1 1 0 0 0 1.42 0l18-18a1 1 0 0 0 0-1.37z" />
-              </g>
-            </svg>
-          </button>
-        </div>
+            <g id="Glyph">
+              <path d="m58.71 31.29-18-18a1 1 0 0 0 -1.42 0l-4.24 4.24a1 1 0 0 0 0 1.42l9.05 9.05h-38.1a1 1 0 0 0 -1 1v6a1 1 0 0 0 1 1h38.1l-9.05 9a1 1 0 0 0 0 1.42l4.24 4.24a1 1 0 0 0 1.42 0l18-18a1 1 0 0 0 0-1.37z" />
+            </g>
+          </svg>
+        </button>
       </div>
     </div>
   );

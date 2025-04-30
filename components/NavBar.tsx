@@ -69,85 +69,15 @@ const NavBar: React.FC = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={toggleMenu}
-            className="xl:hidden text-tertiary hover:text-muted text-3xl font-bold"
+            className=" text-tertiary hover:text-muted text-3xl font-bold"
           >
             {isMenuOpen ? "✕" : "☰"}
           </button>
-
-          {/* Desktop Navigation Links */}
-          <div className="hidden xl:flex xl:space-x-6 text-md font-light">
-            <a
-              href="https://journal.resonatehq.io"
-              className="flex items-center gap-x-2 text-tertiary hover:text-muted"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="bx bx-sm bx-pen"></i> journal
-            </a>
-            <a
-              href="https://docs.resonatehq.io"
-              className="flex items-center gap-x-2 text-tertiary hover:text-muted"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="bx bx-sm bx-code-block"></i> documentation
-            </a>
-            <a
-              href="/rsvp"
-              className="flex items-center gap-x-2 text-tertiary hover:text-muted"
-            >
-              <i className="bx bx-sm bx-calendar-event"></i> rsvp
-            </a>
-            {/* Custom Echo button (not a link) */}
-            <button className="flex items-center gap-x-2 text-tertiary hover:text-muted ask-echo">
-              <i className="bx bx-sm bx-chat"></i> echo
-            </button>
-            <a
-              href="https://resonatehq.io/discord"
-              className="flex items-center gap-x-2 text-tertiary hover:text-muted"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="bx bx-sm bxl-discord"></i> discord
-            </a>
-            <a
-              href="https://github.com/resonatehq"
-              className="flex items-center gap-x-2 text-tertiary hover:text-muted"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="bx bx-sm bxl-github"></i> github
-            </a>
-            <a
-              href="https://www.linkedin.com/company/resonatehqio"
-              className="flex items-center gap-x-2 text-tertiary hover:text-muted"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="bx bx-sm bxl-linkedin"></i> linkedin
-            </a>
-            <a
-              href="https://twitter.com/resonatehqio"
-              className="flex items-center gap-x-2 text-tertiary hover:text-muted"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="bx bx-sm bxl-twitter"></i> twitter
-            </a>
-            <a
-              href="https://www.youtube.com/@resonatehqio"
-              className="flex items-center gap-x-2 text-tertiary hover:text-muted"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="bx bx-sm bxl-youtube"></i> youtube
-            </a>
-          </div>
         </div>
 
         {/* Mobile Menu - Display when toggled */}
         {isMenuOpen && (
-          <div className="lg:hidden flex flex-col text-center py-4">
+          <div className="flex flex-col text-center py-4">
             <a
               href="https://journal.resonatehq.io"
               className="py-2 flex items-center justify-center gap-x-2 text-md font-light text-tertiary hover:text-muted"

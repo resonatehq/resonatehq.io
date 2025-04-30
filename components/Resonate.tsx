@@ -187,7 +187,7 @@ const Resonate: React.FC = () => {
         </p>
       </div>
 
-      <div className="bg-primary text-tertiary px-12  w-full mb-24 w-full">
+      <div className="bg-primary text-tertiary px-12  w-full mb-48 w-full">
         <div className="border-l-8 border-r-8 border-secondary py-12 flex flex-col items-center text-center">
           <p className="text-2xl text-center px-2 md:px-6">
             Resonate is dead simple, formally verified, and deterministically
@@ -221,6 +221,28 @@ const Resonate: React.FC = () => {
             — the way all software should be.
           </p>
         </div>
+      </div>
+      <div className="py-8 flex justify-center items-center mb-48">
+        <button
+          onClick={() =>
+            (window.location.href = "https://docs.resonatehq.io/get-started/")
+          }
+          className="font-mono flex items-center mt-2 mx-4 px-4 py-2 text-tertiary hover:text-muted transition"
+        >
+          Get started
+          <svg
+            height="20"
+            viewBox="0 0 64 64"
+            width="20"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+            className="ml-2"
+          >
+            <g id="Glyph">
+              <path d="m58.71 31.29-18-18a1 1 0 0 0 -1.42 0l-4.24 4.24a1 1 0 0 0 0 1.42l9.05 9.05h-38.1a1 1 0 0 0 -1 1v6a1 1 0 0 0 1 1h38.1l-9.05 9a1 1 0 0 0 0 1.42l4.24 4.24a1 1 0 0 0 1.42 0l18-18a1 1 0 0 0 0-1.37z" />
+            </g>
+          </svg>
+        </button>
       </div>
     </div>
   );
